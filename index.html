@@ -1,101 +1,155 @@
-<!doctype html>
-<html lang="ru">
-<head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>ТрансЭнергоСталь — опоры освещения и контактной сети</title>
-<meta name="description" content="ТрансЭнергоСталь — опоры освещения и контактной сети в Санкт-Петербурге. Подбор по проекту, изготовление, антикоррозионная защита и доставка.">
-<style>
-:root{--bg:#f4f6f7;--dark:#101a22;--dark2:#172630;--gold:#d6a747;--text:#1b2932;--muted:#68757e;--line:#dde3e7;--white:#fff}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,Arial,sans-serif;color:var(--text);background:var(--bg)}a{text-decoration:none;color:inherit}.wrap{max-width:1180px;margin:auto;padding:0 22px}
-header{position:sticky;top:0;z-index:20;background:rgba(16,26,34,.97);color:#fff;border-bottom:1px solid #30404a}.nav{height:76px;display:flex;align-items:center;gap:30px}.logo{font-size:20px;font-weight:900;letter-spacing:.4px;white-space:nowrap}.logo i{color:var(--gold);font-style:normal}.menu{display:flex;gap:24px;margin-left:auto;font-size:13px;color:#c6d0d5}.phone{font-weight:900;white-space:nowrap}.brandLogo{display:block;width:215px;height:58px;object-fit:contain;object-position:center;filter:brightness(1.06)}.burger{display:none;color:#fff;font-size:24px}
-.hero{color:#fff;background:radial-gradient(circle at 80% 30%,#334c59 0,#172630 38%,#101a22 75%);padding:76px 0 70px}.heroGrid{display:grid;grid-template-columns:1.08fr .92fr;gap:34px;align-items:center}.eyebrow{font-size:11px;font-weight:900;letter-spacing:2px;color:var(--gold);text-transform:uppercase}.hero h1{font-size:56px;line-height:1.01;margin:15px 0 22px;letter-spacing:-1.7px}.hero p{font-size:18px;line-height:1.6;color:#c8d1d6;max-width:650px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}.btn{display:inline-flex;align-items:center;justify-content:center;border:0;border-radius:5px;padding:15px 21px;background:var(--gold);color:#111b22;font-weight:900;cursor:pointer}.btn.dark{background:var(--dark);color:#fff}.btn.out{background:transparent;border:1px solid #667780;color:#fff}
-.visual{min-height:390px;position:relative;border:1px solid #425661;border-radius:12px;background:linear-gradient(90deg,rgba(16,26,34,.12),rgba(16,26,34,.05)),url("hero-industrial.jpg") center/cover;overflow:hidden;box-shadow:0 20px 60px rgba(0,0,0,.28)}.visual:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(16,26,34,.38),transparent 55%)}.wire{display:none}.visualLabel{position:absolute;left:25px;bottom:23px;color:#d4dde1;font-size:11px;letter-spacing:1.5px;text-shadow:0 2px 8px #000}
-.trust{background:#fff;border-bottom:1px solid var(--line)}.trustGrid{display:grid;grid-template-columns:repeat(4,1fr)}.trustItem{padding:24px 18px;border-right:1px solid var(--line)}.trustItem:last-child{border:0}.trustItem b{display:block;font-size:16px}.trustItem span{display:block;margin-top:5px;color:var(--muted);font-size:12px}
-section{padding:78px 0}.sectionHead{display:flex;justify-content:space-between;gap:30px;align-items:end}.sectionHead h2{font-size:38px;margin:10px 0}.lead{color:var(--muted);line-height:1.65;max-width:700px}.catalog{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;margin-top:35px}.cat{background:#fff;border:1px solid var(--line);border-radius:10px;padding:30px;position:relative;overflow:hidden}.cat .icon{width:52px;height:52px;border-radius:7px;background:#edf0f1;display:grid;place-items:center;font-weight:900;color:#46545d}.cat h3{font-size:24px;margin:18px 0 9px}.cat p{color:var(--muted);line-height:1.55}.cat ul{color:#55626b;line-height:1.9;padding-left:19px}.cat a{display:inline-block;margin-top:10px;color:#9a741d;font-weight:900;font-size:13px}.miniGrid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:22px}.mini{background:#f7f8f8;border:1px solid #e4e8ea;border-radius:6px;padding:15px;font-size:13px}.mini b{display:block;margin-bottom:5px}.mini span{color:var(--muted)}
-.darkSec{background:var(--dark);color:#fff}.darkSec .lead{color:#b8c3c9}.process{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:35px}.step{border-top:2px solid var(--gold);padding-top:18px}.step .n{color:var(--gold);font-weight:900}.step h3{margin:8px 0;font-size:17px}.step p{color:#aab6bd;line-height:1.55;font-size:13px}
-.specGrid{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:34px}.specCard{background:#fff;border:1px solid var(--line);border-radius:9px;padding:26px}.specCard h3{margin-top:0}.specRow{display:flex;justify-content:space-between;gap:15px;padding:11px 0;border-bottom:1px solid var(--line);font-size:13px}.specRow:last-child{border:0}.specRow span{color:var(--muted)}
-.portfolio{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:35px}.project{min-height:210px;border-radius:9px;overflow:hidden;background:linear-gradient(145deg,#314650,#121d24);position:relative;color:#fff;padding:20px;display:flex;align-items:end}.project:after{content:"";position:absolute;left:18%;bottom:30px;width:8px;height:150px;background:#c6cdd0;transform:skew(-7deg)}.project div{position:relative;z-index:1;background:rgba(0,0,0,.55);padding:11px;border-radius:5px;width:100%}.project b{display:block}.project span{font-size:11px;color:#c8d0d4}
-.cta{background:var(--gold);padding:60px 0}.ctaGrid{display:grid;grid-template-columns:.9fr 1.1fr;gap:35px;align-items:start}.cta h2{font-size:38px;margin:10px 0}.cta p{line-height:1.6}.form{background:#fff;border-radius:9px;padding:25px;display:grid;grid-template-columns:1fr 1fr;gap:11px;box-shadow:0 15px 40px #0002}.form input,.form textarea{font:inherit;border:1px solid #d6dde1;border-radius:4px;padding:13px;width:100%}.form textarea{grid-column:1/-1;min-height:95px}.form button{grid-column:1/-1}.file{grid-column:1/-1;font-size:12px;color:#65727a}.file input{border:0;padding:5px 0}
-footer{background:#0b1319;color:#9da9b0;padding:42px 0}.foot{display:flex;justify-content:space-between;gap:30px}.foot .logo{color:#fff}.footerLogo{width:190px;height:52px}.foot p{font-size:12px}.city{color:#fff;font-weight:800}
-@media(max-width:850px){.brandLogo{width:190px;height:54px}.menu,.phone{display:none}.burger{display:block;margin-left:auto}.heroGrid,.ctaGrid,.specGrid{grid-template-columns:1fr}.hero h1{font-size:44px}.trustGrid{grid-template-columns:1fr 1fr}.process{grid-template-columns:1fr 1fr}.portfolio{grid-template-columns:1fr 1fr}}
-@media(max-width:560px){section{padding:58px 0}.hero{padding:55px 0}.hero h1{font-size:37px}.catalog,.miniGrid,.portfolio,.process,.trustGrid,.form{grid-template-columns:1fr}.visual{min-height:300px}.sectionHead{display:block}.cta h2,.sectionHead h2{font-size:31px}.foot{display:block}.form textarea{grid-column:auto}.form button{grid-column:auto}}
-</style>
+ТрансЭнергоСталь
+ТрансЭнергоСталь
+НАДЁЖНЫЕ ОПОРЫ БОЛЬШИХ ПРОЕКТОВ
+О компании
+Продукция
+Проекты
+Производство
+Документация
+Контакты
++7 936 169-33-33
+Пн–Пт 9:00–18:00
+Заказать звонок
+ПРОИЗВОДСТВО СТАЛЬНЫХ КОНСТРУКЦИЙ
+ОПОРЫ ОСВЕЩЕНИЯ
+И КОНТАКТНОЙ СЕТИ
+Надёжные решения для городов, дорог и транспортной инфраструктуры
 
-<style>
-.catalogSection{padding-top:72px;padding-bottom:76px}.catalogSection h2{font-size:38px;margin:10px 0}.catalogTabs{display:flex;gap:8px;flex-wrap:wrap;margin:30px 0 18px}.tab{border:1px solid #52636d;background:transparent;color:#dbe3e7;padding:12px 17px;border-radius:0;font-weight:800;cursor:pointer}.tab.active{background:#d6a747;color:#111b22;border-color:#d6a747}.productGrid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.productGrid.hidden{display:none}.productCard{background:#172630;border:1px solid #344751;padding:23px;min-height:255px;position:relative}.productNo{font-size:12px;font-weight:900;letter-spacing:1.5px;color:#d6a747}.productCard h3{font-size:20px;margin:12px 0 8px}.productCard p{color:#b8c4ca;line-height:1.55;font-size:13px;min-height:61px}.chips{display:flex;flex-wrap:wrap;gap:6px;margin:14px 0}.chips span{font-size:10px;text-transform:uppercase;letter-spacing:.7px;border:1px solid #465963;padding:5px 7px;color:#c2cdd2}.productCard a{display:inline-block;margin-top:8px;color:#d6a747;font-weight:900;font-size:12px}.catalogNote{color:#87969e;font-size:11px;margin-top:20px}
-@media(max-width:850px){.productGrid{grid-template-columns:1fr 1fr}}@media(max-width:560px){.productGrid{grid-template-columns:1fr}.catalogSection h2{font-size:31px}}
-</style>
-</head>
-<body>
-<header><div class="wrap nav"><a class="logo" href="#"><img class="brandLogo" src="logo-transenergostal.png" alt="ТрансЭнергоСталь"></a><nav class="menu"><a href="#fullcatalog">Каталог</a><a href="#advantages">Преимущества</a><a href="#process">Как работаем</a><a href="#projects">Проекты</a><a href="#contacts">Контакты</a></nav><a class="phone" href="tel:+79361693333">+7 936 169-33-33</a><div class="burger">☰</div></div></header>
+✓
+Производим
+по ГОСТ и ТУ
+⚙
+Индивидуальные
+проекты
+▣
+Доставка
+по России
+↗
+Расчёт и КП
+в течение 1 дня*
+Получить расчёт →
+Перейти в каталог
+Опоры освещения
+›
+Опоры
+освещения
+Гранёные, трубчатые, силовые и несиловые. Фланцевые и прямостоечные.
 
-<main>
-<section class="hero"><div class="wrap heroGrid"><div><div class="eyebrow">Санкт-Петербург · металлоконструкции</div><h1>Опоры освещения и контактной сети под ваш проект</h1><p>Подбираем конструкцию по исходным данным, рассчитываем параметры, организуем изготовление и поставку. Работаем с типовыми и индивидуальными решениями.</p><div class="actions"><a class="btn" href="#contacts">Получить расчёт</a><a class="btn out" href="#catalog">Перейти в каталог</a></div></div><div class="visual"><div class="wire"></div><div class="visualLabel">СТАЛЬНЫЕ ОПОРЫ · ПРОМЫШЛЕННОЕ ПРОИЗВОДСТВО</div></div></div></section>
+Опоры контактной сети
+›
+Опоры
+контактной сети
+Для трамвайных, троллейбусных и городских железнодорожных линий.
 
-<div class="trust"><div class="wrap trustGrid"><div class="trustItem"><b>По ТЗ заказчика</b><span>Подбор и изготовление решения</span></div><div class="trustItem"><b>Расчёт конструкции</b><span>Параметры под условия объекта</span></div><div class="trustItem"><b>Антикоррозионная защита</b><span>Исполнение под условия эксплуатации</span></div><div class="trustItem"><b>Санкт-Петербург</b><span>Поставка и логистика по РФ</span></div></div></div>
+Высокомачтовые опоры
+›
+Высокомачтовые
+опоры
+ВМО, МГФ-М, ВМОН, МГФ-С. Для стадионов, дорог и промышленных объектов.
 
-<section id="catalog"><div class="wrap"><div class="sectionHead"><div><div class="eyebrow">Каталог</div><h2>Основные группы продукции</h2></div><p class="lead">Каталог построен вокруг двух ключевых направлений. Это сокращает путь от технического задания до коммерческого предложения.</p></div>
-<div class="catalog">
-<article class="cat"><div class="icon">01</div><h3>Опоры освещения</h3><p>Решения для автомобильных дорог, улиц, территорий предприятий и общественных пространств.</p><ul><li>гранёные и трубчатые</li><li>силовые и несиловые</li><li>фланцевые и прямостоечные</li><li>индивидуальные исполнения</li></ul><div class="miniGrid"><div class="mini"><b>Гранёные</b><span>конические конструкции</span></div><div class="mini"><b>Трубчатые</b><span>различные исполнения</span></div><div class="mini"><b>Спецрешения</b><span>по исходным данным</span></div></div><a href="#contacts">Запросить подбор →</a></article>
-<article class="cat"><div class="icon">02</div><h3>Опоры контактной сети</h3><p>Стальные конструкции для подвеса контактной сети и размещения дополнительных элементов.</p><ul><li>для трамвайной и троллейбусной инфраструктуры</li><li>трубчатые и гранёные</li><li>фланцевые и прямостоечные</li><li>по проекту и техническому заданию</li></ul><div class="miniGrid"><div class="mini"><b>ОТКСп</b><span>трубчатые прямостоечные</span></div><div class="mini"><b>ОТКСф</b><span>трубчатые фланцевые</span></div><div class="mini"><b>ОГКС</b><span>гранёные конструкции</span></div></div><a href="#contacts">Получить расчёт →</a></article>
-</div></div></section>
+Каталог продукции
+Подбираем типоразмер, высоту, нагрузку, исполнение и покрытие под конкретный проект. Точные характеристики определяются расчётом.
 
+Контактная сеть
+Высокомачтовые
+Гранёные и осветительные
+ОГКС
+Опоры городской контактной сети для трамвайных и троллейбусных линий.
 
-<section id="fullcatalog" class="darkSec catalogSection">
-<div class="wrap">
-  <div class="eyebrow">Каталог продукции</div>
-  <h2>Подберём опору под задачу объекта</h2>
-  <p class="lead">Основные группы для городской инфраструктуры, освещения и контактной сети. Точные параметры, нагрузки и исполнение определяются по проекту и техническому заданию.</p>
-  <div class="catalogTabs">
-    <button class="tab active" data-cat="oks">Контактная сеть</button>
-    <button class="tab" data-cat="high">Высокомачтовые</button>
-    <button class="tab" data-cat="light">Гранёные опоры</button>
-  </div>
+Контактная сеть
+ОГСКС
+Стальные опоры контактной сети для городского электротранспорта.
 
-  <div class="productGrid" id="oks">
-    <article class="productCard"><div class="productNo">ОГКС</div><h3>Опоры контактной сети</h3><p>Гранёные стальные опоры для инфраструктуры городского электрического транспорта.</p><div class="chips"><span>трамвай</span><span>троллейбус</span><span>по проекту</span></div><a href="#contacts">Запросить цену →</a></article>
-    <article class="productCard"><div class="productNo">ОГСКС</div><h3>Силовые опоры КС</h3><p>Конструкции для участков с повышенными требованиями к воспринимаемым нагрузкам.</p><div class="chips"><span>силовые</span><span>гранёные</span><span>расчёт</span></div><a href="#contacts">Получить расчёт →</a></article>
-    <article class="productCard"><div class="productNo">ОГСКСп</div><h3>Прямостоечные опоры</h3><p>Исполнение для установки непосредственно в фундамент с параметрами по проекту.</p><div class="chips"><span>прямостоечные</span><span>КС</span><span>ТЗ</span></div><a href="#contacts">Отправить ТЗ →</a></article>
-    <article class="productCard"><div class="productNo">ТФГ / ОКСГФ</div><h3>Фланцевые решения</h3><p>Стальные опоры с фланцевым основанием для проектных решений контактной сети.</p><div class="chips"><span>фланец</span><span>гранёные</span><span>индивидуально</span></div><a href="#contacts">Запросить подбор →</a></article>
-    <article class="productCard"><div class="productNo">ОС</div><h3>Трубчатые опоры</h3><p>Трубчатые конструкции для контактной сети и специальных инфраструктурных задач.</p><div class="chips"><span>трубчатые</span><span>КС</span><span>по расчёту</span></div><a href="#contacts">Уточнить исполнение →</a></article>
-  </div>
+Контактная сеть
+ОГСКСп
+Исполнение опор для контактной сети по проектным требованиям.
 
-  <div class="productGrid hidden" id="high">
-    <article class="productCard"><div class="productNo">ВМО</div><h3>Высокомачтовые с мобильной короной</h3><p>Мачты с опускаемой короной для обслуживания светового оборудования с уровня земли.</p><div class="chips"><span>16–40 м*</span><span>мобильная корона</span><span>освещение</span></div><a href="#contacts">Подобрать ВМО →</a></article>
-    <article class="productCard"><div class="productNo">МГФ-М</div><h3>Мачты с мобильной короной</h3><p>Гранёные фланцевые высокомачтовые решения с мобильной короной.</p><div class="chips"><span>мобильная корона</span><span>фланец</span><span>расчёт</span></div><a href="#contacts">Получить предложение →</a></article>
-    <article class="productCard"><div class="productNo">ВМОН</div><h3>Высокомачтовые со стационарной короной</h3><p>Высокомачтовые опоры для стационарного размещения прожекторов и светильников.</p><div class="chips"><span>стационарная корона</span><span>освещение</span><span>мачта</span></div><a href="#contacts">Подобрать ВМОН →</a></article>
-    <article class="productCard"><div class="productNo">МГФ-С</div><h3>Мачты со стационарной короной</h3><p>Гранёные фланцевые мачты со стационарной короной для крупных площадок.</p><div class="chips"><span>стационарная корона</span><span>фланец</span><span>по ТЗ</span></div><a href="#contacts">Запросить цену →</a></article>
-  </div>
+Контактная сеть
+ТФГ / ОКСГФ
+Типовые и проектные решения для подвески контактной сети.
 
-  <div class="productGrid hidden" id="light">
-    <article class="productCard"><div class="productNo">СФГ</div><h3>Силовые фланцевые гранёные</h3><p>Гранёные фланцевые опоры для освещения и задач с дополнительными нагрузками.</p><div class="chips"><span>силовые</span><span>фланец</span><span>гранёные</span></div><a href="#contacts">Подобрать СФГ →</a></article>
-    <article class="productCard"><div class="productNo">ОГС</div><h3>Гранёные силовые опоры</h3><p>Распространённое решение для наружного освещения дорог, территорий и объектов.</p><div class="chips"><span>силовые</span><span>освещение</span><span>гранёные</span></div><a href="#contacts">Запросить ОГС →</a></article>
-    <article class="productCard"><div class="productNo">ГРАНЁНЫЕ</div><h3>Опоры освещения</h3><p>Подбор типового исполнения по высоте, нагрузке и способу установки.</p><div class="chips"><span>улицы</span><span>дороги</span><span>территории</span></div><a href="#contacts">Получить подбор →</a></article>
-    <article class="productCard"><div class="productNo">СПЕЦИАЛЬНЫЕ</div><h3>По чертежу или ТЗ</h3><p>Изготовление нестандартных конструкций при наличии исходных данных.</p><div class="chips"><span>индивидуально</span><span>чертёж</span><span>расчёт</span></div><a href="#contacts">Отправить чертёж →</a></article>
-  </div>
-  <p class="catalogNote">* Диапазон высот приведён как ориентир для структуры каталога, а не как универсальная характеристика всех исполнений.</p>
-</div>
-</section>
+Контактная сеть
+ОС
+Специальные опоры для инфраструктурных и контактных сетей.
 
-<section class="darkSec" id="advantages"><div class="wrap"><div class="eyebrow">Для закупки и строительства</div><h2>Сайт отвечает на главные вопросы заказчика</h2><p class="lead">Что заказать, как подобрать, какие исходные данные нужны и что происходит после отправки заявки.</p><div class="process" id="process"><div class="step"><div class="n">01</div><h3>Отправляете задачу</h3><p>Чертёж, спецификацию, ведомость или описание объекта.</p></div><div class="step"><div class="n">02</div><h3>Уточняем параметры</h3><p>Назначение, высоту, нагрузки, исполнение и условия эксплуатации.</p></div><div class="step"><div class="n">03</div><h3>Готовим предложение</h3><p>Подбираем конструкцию и формируем коммерческое предложение.</p></div><div class="step"><div class="n">04</div><h3>Изготавливаем и поставляем</h3><p>Согласовываем заказ, производство и логистику до объекта.</p></div></div></div></section>
+Специальные
+ТРАНСЭНЕРГОСТАЛЬ
+Стальные опоры для инфраструктурных проектов
+Проектные и серийные решения для освещения, электротранспорта, дорог и промышленных объектов. Работаем с типовыми изделиями и нестандартными задачами по исходным данным заказчика.
 
-<section><div class="wrap"><div class="eyebrow">Техническая информация</div><h2>Что можем подобрать</h2><div class="specGrid"><div class="specCard"><h3>Для освещения</h3><div class="specRow"><b>Тип конструкции</b><span>гранёная / трубчатая</span></div><div class="specRow"><b>Исполнение</b><span>силовая / несиловая</span></div><div class="specRow"><b>Установка</b><span>фланцевая / прямостоечная</span></div><div class="specRow"><b>Дополнительно</b><span>кронштейны и элементы</span></div></div><div class="specCard"><h3>Для контактной сети</h3><div class="specRow"><b>Тип</b><span>трубчатая / гранёная</span></div><div class="specRow"><b>Основание</b><span>фланцевое / прямостоечное</span></div><div class="specRow"><b>Назначение</b><span>контактная сеть</span></div><div class="specRow"><b>Проектирование</b><span>по исходным данным</span></div></div></div><p class="lead" style="margin-top:18px;font-size:12px">Окончательные размеры, нагрузки, марка стали, защитное покрытие и стоимость определяются по техническому заданию и расчёту для конкретного объекта.</p></div></section>
+Собственное производство
+Контроль изготовления на ключевых этапах.
+Конструкторский отдел
+Подбор и разработка решений под объект.
+Документация
+Комплект документов и чертежей по согласованному объёму.
+Контроль качества
+Проверка геометрии, сварных соединений и покрытия.
+Доставка
+Организуем отгрузку по Санкт-Петербургу и России.
+Сопровождение
+От запроса и расчёта до поставки.
+Как работаем
+Прозрачный процесс от технического задания до готовой партии.
 
-<section id="projects" style="padding-top:10px"><div class="wrap"><div class="eyebrow">Портфолио</div><h2>Проекты и поставки</h2><p class="lead">Блок подготовлен для размещения реальных объектов ТрансЭнергоСталь. После получения фотографий и данных проектов его можно заполнить конкретными кейсами.</p><div class="portfolio"><div class="project"><div><b>Опоры освещения</b><span>Городская инфраструктура</span></div></div><div class="project"><div><b>Контактная сеть</b><span>Транспортная инфраструктура</span></div></div><div class="project"><div><b>Поставка по ТЗ</b><span>Индивидуальная конструкция</span></div></div></div></div></section>
+01
+Заявка
+Получаем чертежи, спецификацию или исходные данные объекта.
 
-<section class="cta" id="contacts"><div class="wrap ctaGrid"><div><div class="eyebrow" style="color:#17222a">Запросить предложение</div><h2>Рассчитаем опору под ваш объект</h2><p>Отправьте чертёж, спецификацию или описание задачи. Чем больше исходных данных — тем точнее расчёт.</p><p><b>Телефон:</b> <a href="tel:+79361693333">+7 936 169-33-33</a><br><b>Город:</b> Санкт-Петербург</p></div><form class="form" onsubmit="event.preventDefault(); const n=this.name.value; alert('Спасибо'+(n?', '+n:'')+'! Форма демонстрационная. Для реального сайта подключим почту/CRM.');"><input name="name" placeholder="Ваше имя *" required><input name="phone" placeholder="Телефон *" required><input name="company" placeholder="Компания"><input name="email" type="email" placeholder="E-mail"><textarea name="message" placeholder="Что нужно изготовить? Высота, тип, количество, объект..."></textarea><label class="file">Прикрепить ТЗ / чертёж <input type="file"></label><button class="btn dark" type="submit">Отправить заявку</button></form></div></section>
-</main>
+02
+Расчёт
+Определяем исполнение, нагрузки, габариты и формируем коммерческое предложение.
 
-<footer><div class="wrap foot"><div><div class="logo"><img class="brandLogo footerLogo" src="logo-transenergostal.png" alt="ТрансЭнергоСталь"></div><p>Опоры освещения и контактной сети</p><p class="city">Санкт-Петербург</p></div><div><p><a href="tel:+79361693333">+7 936 169-33-33</a></p><p>© 2026 ТрансЭнергоСталь</p></div></div></footer>
+03
+Производство
+Изготавливаем изделия и проводим контроль качества.
 
-<script>
-document.querySelectorAll('.tab').forEach(btn=>{
-  btn.addEventListener('click',()=>{
-    document.querySelectorAll('.tab').forEach(b=>b.classList.remove('active'));
-    btn.classList.add('active');
-    document.querySelectorAll('.productGrid').forEach(g=>g.classList.add('hidden'));
-    document.getElementById(btn.dataset.cat).classList.remove('hidden');
-  });
-});
-</script>
-</body></html>
+04
+Отгрузка
+Согласовываем комплектацию, упаковку, транспорт и сроки поставки.
+
+Решения для объектов
+Городская инфраструктура, электротранспорт, дороги, промышленные и логистические площадки.
+
+Городское освещение
+Опоры для улиц, магистралей, парковок, территорий предприятий и общественных пространств.
+
+Освещение
+Электротранспорт
+Опоры контактной сети для трамвайных и троллейбусных линий, включая индивидуальные решения.
+
+Контактная сеть
+Высокомачтовое освещение
+Мачты с мобильной или стационарной короной для больших площадей и транспортных узлов.
+
+Высокие мачты
+Документация
+Для расчёта и подготовки предложения достаточно прислать чертёж, спецификацию, ведомость или исходные данные.
+
+Чертежи и спецификации
+Принимаем PDF, DWG, XLSX и другие распространённые форматы.
+Технические требования
+Рассматриваем заданные высоты, нагрузки, климатические условия и покрытия.
+Нестандартные изделия
+Отдельно рассчитываются по проектным исходным данным.
+Важно
+Размеры, нагрузки, марка стали, покрытие и фундаментные решения уточняются по проекту.
+ПОЛУЧИТЬ КОММЕРЧЕСКОЕ ПРЕДЛОЖЕНИЕ
+Отправьте задачу — подготовим расчёт
+Укажите тип опор и объём. Если есть чертёж или спецификация — приложите её. Менеджер свяжется с вами для уточнения деталей.
+
+Санкт-Петербург
++7 936 169-33-33
+
+Ваше имя / компания
+Телефон
+
+Выберите направление
+Кратко опишите задачу: количество, высота, город, сроки...
+Отправить заявку →
+Форма демонстрационная: для реального приёма заявок её нужно подключить к вашей почте или CRM.
+ТрансЭнергоСталь
+Опоры освещения и контактной сети
+Санкт-Петербург
++7 936 169-33-33
+© 2026 ТрансЭнергоСталь
