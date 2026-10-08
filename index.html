@@ -117,6 +117,27 @@ html{scroll-behavior:smooth;scroll-padding-top:82px}body{font-family:Arial,Helve
  .heroCard p{font-size:11px}
 }
 
+
+/* Layout correction after checking the live page at desktop width */
+@media(min-width:1101px){
+ .wrap{max-width:1600px}
+ .top .nav{max-width:1700px}
+ .hero{min-height:520px}
+ .hero .wrap{padding-top:40px;padding-bottom:165px}
+ .hero h1{max-width:880px;font-size:clamp(48px,4.2vw,68px);line-height:.98}
+ .heroLead{max-width:570px;font-size:14px}
+ .heroCards{left:50%;right:auto;width:calc(100vw - 64px);max-width:1640px;transform:translateX(-50%);gap:10px}
+ .heroCard{min-height:126px;grid-template-columns:38% 62%}
+ .heroCard img{min-height:126px}
+ .heroCard h3{font-size:15px}
+ .heroCard p{font-size:10px}
+}
+@media(min-width:1101px) and (max-width:1400px){
+ .wrap{max-width:1240px}
+ .hero h1{max-width:760px;font-size:clamp(48px,4.2vw,60px)}
+ .heroCards{width:calc(100vw - 48px)}
+}
+
 </style>
 
 <script type="application/ld+json">
