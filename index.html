@@ -562,6 +562,14 @@ html{scroll-behavior:smooth;scroll-padding-top:82px}body{font-family:Arial,Helve
   .top .brand small{font-size:6px!important;letter-spacing:.7px!important}
 }
 
+
+/* Hero background: show the complete reference composition without cropping on desktop */
+@media (min-width:701px){
+  section.hero:before{
+    background-size:100% 100%!important;
+    background-position:center center!important;
+  }
+}
 </style>
 <link rel="stylesheet" href="hero-reference.css?v=5">
 
