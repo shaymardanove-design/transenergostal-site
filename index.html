@@ -387,6 +387,55 @@ html{scroll-behavior:smooth;scroll-padding-top:82px}body{font-family:Arial,Helve
   }
 }
 
+
+/* Hero v1: fixed composition, close to approved reference */
+@media (min-width:1101px){
+  section.hero{
+    height:650px!important;min-height:650px!important;
+    background:#061827!important;
+  }
+  section.hero:before{
+    background:
+      linear-gradient(90deg,rgba(2,13,23,.78) 0%,rgba(3,17,29,.58) 36%,rgba(3,17,29,.16) 76%,rgba(3,17,29,.10) 100%),
+      url('hero-clean.jpg') center 46%/cover no-repeat!important;
+  }
+  section.hero>div.wrap:first-child{
+    position:relative!important;display:block!important;
+    width:100%!important;max-width:none!important;margin:0!important;
+    padding:54px 30px 180px!important;box-sizing:border-box!important;
+    text-align:left!important;
+  }
+  section.hero>div.wrap:first-child .eyebrow,
+  section.hero>div.wrap:first-child h1,
+  section.hero>div.wrap:first-child .heroLead,
+  section.hero>div.wrap:first-child .facts,
+  section.hero>div.wrap:first-child .heroButtons{
+    margin-left:0!important;margin-right:0!important;text-align:left!important;
+  }
+  section.hero>div.wrap:first-child h1{
+    width:min(850px,calc(100vw - 60px))!important;max-width:850px!important;
+    font-size:clamp(56px,4.2vw,76px)!important;line-height:.96!important;
+    letter-spacing:-2.2px!important;margin-bottom:16px!important;
+  }
+  section.hero>div.wrap:first-child .heroLead{max-width:510px!important;font-size:16px!important}
+  section.hero>div.wrap:first-child .facts{max-width:560px!important}
+  section.hero>div.wrap.heroCards{
+    position:absolute!important;left:16px!important;right:16px!important;
+    bottom:14px!important;top:auto!important;width:auto!important;max-width:none!important;
+    margin:0!important;padding:0!important;transform:none!important;
+    display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr))!important;
+    gap:10px!important;box-sizing:border-box!important;
+  }
+  section.hero>div.wrap.heroCards .heroCard{
+    min-height:112px!important;height:112px!important;max-height:112px!important;
+    grid-template-columns:36% 64%!important;
+  }
+  section.hero>div.wrap.heroCards .heroCard img{
+    width:100%!important;height:110px!important;min-height:110px!important;
+    object-fit:contain!important;object-position:center bottom!important;
+  }
+}
+
 </style>
 <link rel="stylesheet" href="hero-reference.css?v=3">
 
