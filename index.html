@@ -174,6 +174,16 @@ html{scroll-behavior:smooth;scroll-padding-top:82px}body{font-family:Arial,Helve
  .hero .wrap:not(.heroCards){padding-bottom:190px!important}
 }
 
+
+/* Product artwork should be fully visible rather than cropped */
+@media(min-width:701px){
+ .hero .wrap.heroCards .heroCard img{object-fit:contain!important;object-position:center bottom!important;background:#08253a!important}
+ .hero .wrap.heroCards .heroCard{height:150px!important;min-height:150px!important;max-height:150px!important}
+ .hero .wrap.heroCards .heroCard img{height:148px!important;max-height:148px!important}
+ .hero .wrap.heroCards .heroCard>div{padding:15px 14px!important}
+ .hero .wrap.heroCards{bottom:14px!important}
+}
+
 </style>
 
 <script type="application/ld+json">
