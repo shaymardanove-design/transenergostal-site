@@ -129,3 +129,35 @@
     bottom:16px!important;grid-template-columns:repeat(3,minmax(0,1fr))!important;
   }
 }
+
+
+/* Reference match v5: left-aligned hero copy + wide product cards */
+@media (min-width:1101px){
+  .hero{height:450px!important;min-height:450px!important;position:relative!important;overflow:hidden!important}
+  .hero>.wrap:first-child{
+    position:absolute!important;top:0!important;left:20px!important;right:auto!important;
+    transform:none!important;width:540px!important;max-width:540px!important;
+    margin:0!important;padding:36px 0 0!important;box-sizing:border-box!important;
+  }
+  .hero>.wrap:first-child .eyebrow{margin-bottom:12px!important}
+  .hero>.wrap:first-child h1{
+    width:540px!important;max-width:540px!important;font-size:clamp(48px,3.2vw,56px)!important;
+    line-height:.91!important;letter-spacing:-1.4px!important;
+    white-space:normal!important;word-break:normal!important;overflow-wrap:normal!important;
+    margin:0 0 14px!important;
+  }
+  .hero>.wrap:first-child .heroLead{max-width:390px!important}
+  .hero .wrap.heroCards{
+    position:absolute!important;left:15px!important;right:15px!important;
+    width:auto!important;max-width:none!important;transform:none!important;
+    bottom:10px!important;gap:8px!important;
+    grid-template-columns:repeat(3,minmax(0,1fr))!important;
+  }
+  .hero .wrap.heroCards .heroCard{min-width:0!important;height:78px!important;min-height:78px!important}
+}
+@media (min-width:701px) and (max-width:1100px){
+  .hero{height:480px!important;min-height:480px!important}
+  .hero>.wrap:first-child{position:relative!important;left:auto!important;transform:none!important;width:calc(100% - 40px)!important;max-width:620px!important;margin:0 20px!important;padding:32px 0 145px!important}
+  .hero>.wrap:first-child h1{font-size:clamp(42px,5vw,54px)!important;line-height:.94!important}
+  .hero .wrap.heroCards{left:15px!important;right:15px!important;width:auto!important;transform:none!important;bottom:10px!important}
+}
