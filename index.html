@@ -230,6 +230,25 @@ html{scroll-behavior:smooth;scroll-padding-top:82px}body{font-family:Arial,Helve
  .hero .wrap.heroCards .heroCard{height:112px!important;min-height:112px!important;max-height:112px!important;grid-template-columns:36% 64%!important}
 }
 
+
+/* Final alignment pass: match the reference's centered content column */
+@media(min-width:1101px){
+  .hero .wrap{max-width:1080px!important;margin-left:auto!important;margin-right:auto!important;padding-left:0!important;padding-right:0!important}
+  .hero .wrap{padding-top:40px!important;padding-bottom:165px!important}
+  .hero h1{max-width:760px!important;font-size:clamp(48px,4.1vw,68px)!important}
+  .heroLead{max-width:500px!important}
+  .facts{max-width:500px!important}
+  .heroCards{left:50%!important;right:auto!important;width:calc(100% - 40px)!important;max-width:1060px!important;transform:translateX(-50%)!important;grid-template-columns:repeat(3,minmax(0,1fr))!important}
+  .heroCard{min-height:126px!important;grid-template-columns:38% 62%!important}
+  .heroCard img{min-height:126px!important}
+  .heroCard h3{font-size:15px!important}
+  .heroCard p{font-size:10px!important}
+}
+@media(max-width:1100px) and (min-width:701px){
+  .hero .wrap{max-width:900px;margin:0 auto;padding-left:24px;padding-right:24px}
+  .heroCards{width:calc(100% - 40px);left:20px;right:20px;transform:none}
+}
+
 </style>
 <link rel="stylesheet" href="hero-reference.css?v=3">
 
