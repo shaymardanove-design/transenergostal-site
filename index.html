@@ -148,6 +148,22 @@ html{scroll-behavior:smooth;scroll-padding-top:82px}body{font-family:Arial,Helve
  .hero .wrap.heroCards{left:22px;right:22px;width:auto;max-width:none}
 }
 
+
+/* Final hero card sizing fix: fixed-height cards and enough room below the headline */
+@media(min-width:701px){
+ .hero{min-height:600px!important;height:600px!important}
+ .hero .wrap.heroCards{top:auto!important;bottom:0!important;height:136px!important;min-height:136px!important;align-items:stretch!important}
+ .hero .wrap.heroCards .heroCard{height:136px!important;min-height:136px!important;max-height:136px!important;overflow:hidden!important}
+ .hero .wrap.heroCards .heroCard img{display:block;width:100%!important;height:134px!important;min-height:0!important;max-height:134px!important;object-fit:cover!important;align-self:stretch}
+ .hero .wrap.heroCards .heroCard>div{min-width:0;overflow:hidden;padding:14px 12px!important}
+ .hero .wrap.heroCards .heroCard h3{font-size:15px!important;line-height:1.15!important}
+ .hero .wrap.heroCards .heroCard p{font-size:10px!important;line-height:1.3!important}
+}
+@media(min-width:1101px){
+ .hero .wrap:not(.heroCards){padding-top:40px!important;padding-bottom:175px!important}
+ .hero h1{max-width:900px!important}
+}
+
 </style>
 
 <script type="application/ld+json">
