@@ -138,6 +138,16 @@ html{scroll-behavior:smooth;scroll-padding-top:82px}body{font-family:Arial,Helve
  .heroCards{width:calc(100vw - 48px)}
 }
 
+
+/* Keep featured product cards anchored to the full hero, not the centered text container */
+@media(min-width:701px){
+ .hero .wrap.heroCards{position:absolute;left:22px;right:22px;bottom:0;width:auto;max-width:none;margin:0;padding:0;transform:none;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+ .hero .wrap.heroCards .heroCard{min-width:0}
+}
+@media(min-width:1101px){
+ .hero .wrap.heroCards{left:22px;right:22px;width:auto;max-width:none}
+}
+
 </style>
 
 <script type="application/ld+json">
