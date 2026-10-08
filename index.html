@@ -309,6 +309,52 @@ html{scroll-behavior:smooth;scroll-padding-top:82px}body{font-family:Arial,Helve
   .hero > .wrap.heroCards{position:relative!important;left:auto!important;right:auto!important;bottom:auto!important;width:auto!important;margin:0!important;padding:0 18px 18px!important}
 }
 
+
+/* === Reference composition override: left-aligned hero + full-width category strip === */
+@media (min-width:1101px) {
+  .hero { height:650px!important; min-height:650px!important; }
+  .hero > .wrap:not(.heroCards) {
+    width:auto!important; max-width:none!important; margin:0!important;
+    padding:48px 28px 190px!important;
+  }
+  .hero > .wrap:not(.heroCards) .eyebrow { margin-bottom:12px!important; }
+  .hero > .wrap:not(.heroCards) h1 {
+    width:auto!important; max-width:900px!important;
+    font-size:clamp(58px,4.1vw,76px)!important;
+    line-height:.96!important; letter-spacing:-2px!important;
+    margin:0 0 14px!important;
+  }
+  .hero > .wrap:not(.heroCards) .heroLead { max-width:500px!important; font-size:15px!important; }
+  .hero > .wrap:not(.heroCards) .facts { max-width:560px!important; }
+  .hero > .wrap.heroCards {
+    position:absolute!important; left:16px!important; right:16px!important;
+    top:auto!important; bottom:14px!important; transform:none!important;
+    width:auto!important; max-width:none!important; height:112px!important;
+    min-height:112px!important; margin:0!important; padding:0!important;
+    display:grid!important; grid-template-columns:repeat(3,minmax(0,1fr))!important; gap:10px!important;
+  }
+  .hero > .wrap.heroCards .heroCard {
+    height:112px!important; min-height:112px!important; max-height:112px!important;
+    grid-template-columns:36% 64%!important;
+  }
+  .hero > .wrap.heroCards .heroCard img {
+    height:110px!important; min-height:110px!important; max-height:110px!important;
+    object-fit:contain!important; object-position:center bottom!important;
+  }
+}
+@media (min-width:701px) and (max-width:1100px) {
+  .hero { height:590px!important; min-height:590px!important; }
+  .hero > .wrap:not(.heroCards) { width:auto!important; max-width:none!important; margin:0!important; padding:44px 24px 180px!important; }
+  .hero > .wrap:not(.heroCards) h1 { max-width:760px!important; width:auto!important; font-size:clamp(44px,5.5vw,62px)!important; }
+  .hero > .wrap.heroCards { left:16px!important; right:16px!important; width:auto!important; bottom:14px!important; transform:none!important; }
+}
+@media (max-width:700px) {
+  .hero { height:auto!important; min-height:0!important; }
+  .hero > .wrap:not(.heroCards) { padding:48px 18px 28px!important; }
+  .hero > .wrap:not(.heroCards) h1 { width:auto!important; max-width:100%!important; font-size:clamp(35px,9vw,48px)!important; }
+  .hero > .wrap.heroCards { position:relative!important; left:auto!important; right:auto!important; bottom:auto!important; width:auto!important; max-width:none!important; transform:none!important; padding:0 18px 18px!important; grid-template-columns:1fr!important; }
+}
+
 </style>
 <link rel="stylesheet" href="hero-reference.css?v=3">
 
