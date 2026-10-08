@@ -355,6 +355,38 @@ html{scroll-behavior:smooth;scroll-padding-top:82px}body{font-family:Arial,Helve
   .hero > .wrap.heroCards { position:relative!important; left:auto!important; right:auto!important; bottom:auto!important; width:auto!important; max-width:none!important; transform:none!important; padding:0 18px 18px!important; grid-template-columns:1fr!important; }
 }
 
+
+/* Corrective override: anchor the hero copy to the viewport's left edge. */
+@media (min-width:1101px) {
+  section.hero { position:relative!important; min-height:650px!important; height:650px!important; }
+  section.hero > div.wrap:first-child {
+    position:relative!important; display:block!important;
+    width:100%!important; max-width:none!important; min-width:0!important;
+    margin:0!important; padding:48px 28px 190px!important;
+    box-sizing:border-box!important; left:0!important; right:auto!important;
+    transform:none!important;
+  }
+  section.hero > div.wrap:first-child .eyebrow,
+  section.hero > div.wrap:first-child h1,
+  section.hero > div.wrap:first-child .heroLead,
+  section.hero > div.wrap:first-child .facts,
+  section.hero > div.wrap:first-child .heroButtons {
+    margin-left:0!important; text-align:left!important;
+  }
+  section.hero > div.wrap:first-child h1 {
+    display:block!important; width:min(1100px, calc(100vw - 56px))!important;
+    max-width:1100px!important; font-size:clamp(58px,4.1vw,76px)!important;
+    line-height:.96!important; letter-spacing:-2px!important;
+  }
+  section.hero > div.wrap.heroCards {
+    position:absolute!important; display:grid!important;
+    left:16px!important; right:16px!important; bottom:14px!important; top:auto!important;
+    width:auto!important; max-width:none!important; margin:0!important; padding:0!important;
+    transform:none!important; grid-template-columns:repeat(3,minmax(0,1fr))!important;
+    gap:10px!important; box-sizing:border-box!important;
+  }
+}
+
 </style>
 <link rel="stylesheet" href="hero-reference.css?v=3">
 
