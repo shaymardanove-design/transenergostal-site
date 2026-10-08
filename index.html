@@ -1,467 +1,97 @@
 <!doctype html>
 <html lang="ru">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>ТрансЭнергоСталь | Опоры освещения и контактной сети</title>
-<meta name="description" content="ТрансЭнергоСталь — производство стальных опор освещения, контактной сети и высокомачтовых конструкций. Расчёт, изготовление, поставка и монтаж по России."><meta name="theme-color" content="#061827"><meta property="og:type" content="website"><meta property="og:url" content="https://trenst.ru/"><meta property="og:title" content="ТрансЭнергоСталь — стальные опоры и конструкции"><meta property="og:description" content="Опоры освещения, контактной сети, высокомачтовые конструкции. Расчёт и коммерческое предложение по проекту."><link rel="canonical" href="https://trenst.ru/">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ТрансЭнергоСталь — опоры освещения и контактной сети</title>
+<meta name="description" content="ТрансЭнергоСталь: опоры освещения, контактной сети и высокомачтовые конструкции. Подбор, изготовление и поставка по России. Запросите расчёт стоимости.">
+<meta name="theme-color" content="#071522">
+<link rel="canonical" href="https://trenst.ru/">
 <style>
-:root{--ink:#071725;--navy:#061827;--navy2:#0a263c;--blue:#087ff5;--blue2:#005fbd;--line:#d9e3e9;--soft:#f3f7fa;--muted:#617787;--white:#fff;--max:1480px}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--ink);font:15px/1.55 Arial,Helvetica,sans-serif;background:#fff}a{text-decoration:none;color:inherit}.wrap{max-width:var(--max);margin:auto;padding:0 34px}
-.top{position:sticky;top:0;z-index:50;background:rgba(4,18,30,.97);border-bottom:1px solid #19384e;color:#fff}.nav{min-height:82px;display:flex;align-items:center;gap:28px}.brand{display:flex;align-items:center;gap:12px;min-width:365px}.brand img{width:62px;height:54px;object-fit:contain}.brand strong{font-size:21px;display:block}.brand small{display:block;color:#91a8b8;font-size:8px;letter-spacing:1.4px;margin-top:2px}.menu{display:flex;gap:20px;justify-content:center;flex:1;color:#d7e2e9;font-size:12px}.menu a:hover{color:#fff}.phone{text-align:right;white-space:nowrap}.phone b{display:block;font-size:14px}.phone small{color:#90a7b6;font-size:10px}.btn{display:inline-flex;align-items:center;justify-content:center;min-height:46px;padding:0 20px;border:1px solid #7f9caf;color:#fff;font-weight:700;font-size:13px;cursor:pointer}.btn.blue{background:var(--blue);border-color:var(--blue)}.btn.blue:hover{background:#1490ff}.btn:hover{transform:translateY(-1px)}
-.hero{position:relative;min-height:680px;background:#061a2a;color:#fff;overflow:hidden}.hero:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(2,14,25,.94) 0%,rgba(3,18,30,.82) 32%,rgba(3,18,30,.34) 68%,rgba(3,18,30,.12) 100%),url('hero-clean.jpg') center/cover}.hero .wrap{position:relative;padding-top:100px;padding-bottom:165px}.eyebrow{color:#9dc8e8;letter-spacing:2.4px;font-size:11px;text-transform:uppercase;margin-bottom:13px}.hero h1{font-size:clamp(48px,5.5vw,78px);line-height:.96;letter-spacing:-2.5px;max-width:900px;margin:0 0 20px}.heroLead{font-size:18px;line-height:1.4;color:#d5e1e8;max-width:650px;margin-bottom:28px}.facts{display:flex;gap:28px;flex-wrap:wrap;margin-bottom:28px}.fact{display:flex;align-items:flex-start;gap:9px;max-width:175px}.fact i{font-style:normal;color:#67baff;font-size:21px;line-height:1}.fact b{font-size:11px;line-height:1.3;text-transform:uppercase}.heroButtons{display:flex;gap:10px}.heroCards{position:absolute;left:42px;right:42px;bottom:0;display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.heroCard{background:#08253a;border:1px solid #31556c;display:grid;grid-template-columns:39% 61%;min-height:154px;overflow:hidden}.heroCard img{width:100%;height:100%;object-fit:cover;background:#0a263b}.heroCard div{padding:18px}.heroCard h3{font-size:20px;line-height:1.12;margin:0 0 7px}.heroCard p{font-size:12px;line-height:1.4;color:#b8c8d3;margin:0}.arrow{float:right;width:30px;height:30px;border:1px solid #71b8e9;border-radius:50%;text-align:center;line-height:27px;font-size:20px}
-.section{padding:78px 0}.section.gray{background:var(--soft)}.head{display:flex;justify-content:space-between;align-items:end;gap:40px;margin-bottom:28px}.head h2{font-size:39px;line-height:1.05;margin:0;letter-spacing:-1px}.head p{max-width:620px;color:var(--muted);margin:0}.tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:18px}.tab{padding:10px 16px;background:#fff;border:1px solid #cad7df;color:#355366;font-weight:700;cursor:pointer}.tab.active{background:var(--blue);border-color:var(--blue);color:#fff}.catalog{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.item{border:1px solid #d6e1e7;background:#fff;display:flex;flex-direction:column;min-height:315px}.itemVisual{height:170px;background:#0a2438}.itemVisual img{width:100%;height:100%;object-fit:cover;object-position:center}.itemBody{padding:18px}.item h3{font-size:22px;margin:0 0 6px}.item p{font-size:13px;color:#657a89;margin:0 0 12px}.tag{font-size:9px;text-transform:uppercase;letter-spacing:1px;border:1px solid #a9cae2;color:#1677c9;padding:5px 8px;display:inline-block}
-.benefits{display:grid;grid-template-columns:repeat(5,1fr);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}.benefit{padding:23px 17px;border-right:1px solid var(--line)}.benefit:last-child{border-right:0}.benefit .ico{font-size:24px;color:var(--blue);margin-bottom:8px}.benefit b{display:block;font-size:14px;margin-bottom:5px}.benefit span{color:#6d8290;font-size:12px}
-.aboutGrid{display:grid;grid-template-columns:1.05fr .95fr;gap:55px;align-items:stretch}.aboutPhoto{min-height:380px;background:linear-gradient(90deg,rgba(4,20,32,.2),rgba(4,20,32,.05)),url('hero-clean.jpg') center/cover;border:1px solid #cbd8df;position:relative}.aboutPhoto .stamp{position:absolute;bottom:20px;left:20px;background:#071b2b;color:#fff;padding:16px 18px;border-left:3px solid var(--blue)}.aboutText h2{font-size:42px;line-height:1.05;margin:0 0 17px}.aboutText p{font-size:16px;color:var(--muted);max-width:680px}.metrics{display:grid;grid-template-columns:1fr 1fr;background:#edf3f7;margin-top:24px}.metric{padding:22px;border-right:1px solid #d6e1e7;border-bottom:1px solid #d6e1e7}.metric:nth-child(2n){border-right:0}.metric strong{font-size:34px;display:block;color:#092b43}.metric span{font-size:12px;color:#647a89}
-.serviceGrid{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}.service{border:1px solid #d3dfe6;background:#fff;display:flex;flex-direction:column;min-height:340px}.serviceVisual{height:180px;background:#09253a;overflow:hidden}.serviceVisual img{width:100%;height:100%;object-fit:cover}.serviceBody{padding:17px;display:flex;flex-direction:column;flex:1}.serviceBody b{font-size:17px;line-height:1.2}.serviceBody p{font-size:12px;color:#6c808d;margin:8px 0 15px}.serviceBody .btn{margin-top:auto;align-self:flex-start;color:#0b5fa8;border-color:#6fa8cf}.serviceGrid + .serviceNote{margin-top:18px;color:var(--muted);font-size:12px}
-.projectGrid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
-.projectsShowcase{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.projectCase{background:#fff;border:1px solid #d4e0e7;position:relative;overflow:hidden;transition:.2s}.projectCase:hover{transform:translateY(-3px);box-shadow:0 12px 28px rgba(5,24,39,.10);border-color:#1686f7}.projectCaseVisual{height:230px;background:#09253a;overflow:hidden}.projectCaseVisual img{width:100%;height:100%;object-fit:cover}.projectCaseBody{padding:20px}.projectCaseBody b{display:block;font-size:20px;line-height:1.15;margin-bottom:7px}.projectCaseBody p{font-size:13px;color:#6a7f8d;margin:0 0 14px}.projectCaseMeta{display:flex;gap:8px;flex-wrap:wrap}.projectCaseMeta span{font-size:10px;letter-spacing:.5px;text-transform:uppercase;border:1px solid #b7d3e7;color:#176da8;padding:6px 9px}.projectNote{margin-top:20px;color:#718592;font-size:11px}
-@media(max-width:1100px){.projectsShowcase{grid-template-columns:repeat(2,1fr)}}
-@media(max-width:700px){.projectsShowcase{grid-template-columns:1fr}.projectCaseVisual{height:210px}}
-.project{border:1px solid #d3dfe6;background:#fff}.projectVisual{height:150px;background:#09253a}.projectVisual img{width:100%;height:100%;object-fit:cover}.project div{padding:14px}.project b{font-size:14px}.project span{display:block;font-size:11px;color:#788b98;margin-top:4px}
-.process{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.step{background:#071b2b;color:#fff;padding:24px;border:1px solid #1d4059;min-height:175px}.step .num{font-size:31px;font-weight:900;color:#57b1f5}.step h3{font-size:18px;margin:5px 0}.step p{font-size:12px;color:#aec0cc;margin:0}.docs{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.doc{background:#fff;border:1px solid #d5e0e7;padding:20px;min-height:130px}.doc .ico{font-size:22px;color:var(--blue);margin-bottom:8px}.doc b{display:block;font-size:14px;margin-bottom:5px}.doc span{font-size:12px;color:#718592}
-.cta{background:#061a2a;color:#fff}.ctaGrid{display:grid;grid-template-columns:1fr .9fr;gap:80px;align-items:start}.cta h2{font-size:44px;line-height:1.05;margin:0 0 16px}.cta p{color:#afc0cb;max-width:650px}.contactLine{margin-top:25px;font-size:18px}.contactLine b{color:#fff}.form{display:grid;gap:10px}.form input,.form select,.form textarea{width:100%;padding:13px 14px;background:#09253a;border:1px solid #34556c;color:#fff;font:inherit}.form textarea{min-height:105px;resize:vertical}.form small{font-size:10px;color:#8498a7}.fileLabel{display:grid;gap:7px;font-size:12px;color:#b8c8d3}.fileLabel input[type=file]{padding:10px;border:1px dashed #4b6a7e;background:#071f31;color:#dce8ee}.formStatus{font-size:13px;line-height:1.4;padding-top:4px}.formStatus.ok{color:#78d0a2}.formStatus.err{color:#ff9a9a}.footer{background:#03111d;color:#98adba;padding:32px 0}.foot{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:30px}.foot b{color:#fff;font-size:17px}.foot a{color:#dce7ee}
-@media(max-width:1100px){.menu{display:none}.brand{min-width:0}.phone{margin-left:auto}.heroCards{left:42px;right:42px}.catalog{grid-template-columns:repeat(2,1fr)}.benefits{grid-template-columns:repeat(2,1fr)}.benefit:nth-child(2n){border-right:0}.projectGrid{grid-template-columns:repeat(2,1fr)}.serviceGrid{grid-template-columns:repeat(2,1fr)}.process,.docs{grid-template-columns:repeat(2,1fr)}.aboutGrid,.ctaGrid{grid-template-columns:1fr}}
-@media(max-width:700px){.wrap{padding:0 18px}.nav{min-height:70px}.brand img{width:52px;height:46px}.brand strong{font-size:17px}.brand small{font-size:7px}.phone,.top .btn{display:none}.hero .wrap{padding-top:65px;padding-bottom:30px}.hero h1{font-size:43px}.heroLead{font-size:16px}.heroButtons{flex-direction:column}.heroButtons .btn{width:100%}.heroCards{position:relative;left:auto;right:auto;bottom:auto;padding:0 18px 18px;grid-template-columns:1fr}.heroCard{min-height:145px}.section{padding:58px 0}.head{display:block}.head h2{font-size:33px;margin-bottom:12px}.catalog,.projectGrid,.serviceGrid,.process,.docs,.benefits{grid-template-columns:1fr}.benefit{border-right:0;border-bottom:1px solid var(--line)}.aboutText h2,.cta h2{font-size:35px}.aboutPhoto{min-height:260px}.foot{grid-template-columns:1fr}}
-
-.catalogTabs{overflow-x:auto;flex-wrap:nowrap;padding-bottom:4px}.catalogTabs .tab{white-space:nowrap}.catalog{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;margin-top:22px}.item{border:1px solid #d7e2e9;background:#fff;display:flex;flex-direction:column;min-height:430px;transition:.2s}.item:hover{transform:translateY(-3px);box-shadow:0 12px 28px rgba(5,24,39,.10);border-color:#1686f7}.itemVisual{height:205px;background:linear-gradient(135deg,#071d2d,#0c3048);display:flex;align-items:center;justify-content:center;overflow:hidden;border-bottom:1px solid #183d55}.itemVisual img{width:100%;height:100%;object-fit:cover;object-position:center}.itemBody{padding:20px;display:flex;flex-direction:column;flex:1}.itemBody h3{font-size:24px;margin:0 0 9px;color:#071725}.itemBody p{color:#617787;margin:0 0 14px;min-height:72px}.itemMeta{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:18px}.tag{display:inline-block;border:1px solid #b9d1df;color:#3e657b;font-size:11px;text-transform:uppercase;letter-spacing:.08em;padding:6px 8px}.quoteBtn{margin-top:auto;display:inline-flex;align-items:center;justify-content:center;gap:8px;background:#087ff5;color:#fff;padding:13px 16px;font-weight:700;border:1px solid #087ff5;cursor:pointer}.quoteBtn:hover{background:#005fbd}.catalogIntro{margin-top:10px;color:#617787}.catalogCount{font-size:12px;color:#6a8190;margin-top:8px}.quoteModal{position:fixed;inset:0;background:rgba(2,14,23,.72);display:none;align-items:center;justify-content:center;z-index:100;padding:20px}.quoteModal.open{display:flex}.quoteBox{background:#fff;width:min(620px,100%);padding:30px;box-shadow:0 25px 80px rgba(0,0,0,.3)}.quoteBox h3{margin:0 0 8px;font-size:28px}.quoteBox .close{float:right;border:0;background:none;font-size:28px;cursor:pointer;color:#5d7280}.quoteBox label{display:block;font-size:13px;font-weight:700;margin:15px 0 6px}.quoteBox input,.quoteBox textarea{width:100%;padding:13px;border:1px solid #ccd9e1;font:inherit}.quoteBox textarea{min-height:100px;resize:vertical}.quoteBox .btn{margin-top:18px}.quoteNote{font-size:12px;color:#728694;margin-top:10px}.itemVisual .prodLabel{position:absolute;color:#fff;font-size:11px;letter-spacing:.16em;opacity:.75}.itemVisual{position:relative}
-@media(max-width:1000px){.catalog{grid-template-columns:repeat(2,1fr)}}@media(max-width:650px){.catalog{grid-template-columns:1fr}.item{min-height:0}.itemVisual{height:190px}}
-
-/* ===== TRANSENERGOSTAL DESIGN SYSTEM v2 ===== */
-:root{--ink:#071725;--navy:#061827;--navy2:#0a263c;--blue:#087ff5;--blueDark:#005fbd;--steel:#8ea3af;--line:#d7e1e7;--soft:#f1f5f7;--white:#fff;--muted:#637887;--max:1480px;--r:0px;--shadow:0 14px 38px rgba(4,22,36,.10)}
-html{scroll-behavior:smooth;scroll-padding-top:82px}body{font-family:Arial,Helvetica,sans-serif;background:#fff;color:var(--ink);letter-spacing:.01em}::selection{background:#087ff5;color:#fff}
-.wrap{max-width:var(--max);padding-left:32px;padding-right:32px}.top{background:rgba(4,16,27,.985);box-shadow:0 8px 30px rgba(0,0,0,.12)}.nav{height:82px}.brand{min-width:335px}.brand img{width:58px;height:50px}.brand strong{letter-spacing:-.02em}.menu{gap:18px}.menu a{position:relative;padding:31px 0;color:#bfcfd9}.menu a:after{content:"";position:absolute;left:0;right:100%;bottom:22px;height:2px;background:var(--blue);transition:.2s}.menu a:hover:after{right:0}.phone b{font-size:15px}.top>.wrap>.btn{min-height:42px;padding:0 17px}
-.btn,.quoteBtn{border-radius:0!important;transition:transform .18s,background .18s,border-color .18s,box-shadow .18s}.btn.blue,.quoteBtn{box-shadow:0 8px 22px rgba(8,127,245,.18)}.btn.blue:hover,.quoteBtn:hover{box-shadow:0 10px 28px rgba(8,127,245,.28)}
-.hero{min-height:720px}.hero:before{background:linear-gradient(90deg,rgba(2,14,25,.97) 0%,rgba(3,18,30,.88) 35%,rgba(3,18,30,.48) 66%,rgba(3,18,30,.22) 100%),url('hero-clean.jpg') center/cover}.hero .wrap{padding-top:112px}.eyebrow{font-weight:700}.hero h1{max-width:920px;font-weight:900}.heroLead{max-width:690px}.facts{gap:14px}.fact{border-left:2px solid #2c8ed5;padding-left:11px}.heroCards{left:32px;right:32px;gap:12px}.heroCard{background:rgba(7,29,46,.96);grid-template-columns:42% 58%;border-color:#35576c;box-shadow:0 12px 30px rgba(0,0,0,.15)}.heroCard img{filter:saturate(.9) contrast(1.03)}.heroCard div{padding:17px}.heroCard h3{font-weight:800}.arrow{border-radius:0;width:32px;height:32px;line-height:29px}
-.section{padding:84px 0}.section.gray{background:#f3f6f8}.head{margin-bottom:30px}.head h2{font-weight:900;letter-spacing:-.035em}.head p{line-height:1.65}.tabs{gap:6px}.tab{border-radius:0;font-size:12px;text-transform:uppercase;letter-spacing:.02em}.tab:hover{border-color:#7da9c5;color:#075f9f}.tab.active{box-shadow:0 6px 18px rgba(8,127,245,.16)}
-.catalog{gap:18px}.item{border-radius:0;min-height:430px;box-shadow:none}.item:hover{box-shadow:var(--shadow)}.itemVisual{height:218px}.itemVisual img{object-fit:cover}.itemBody h3{font-size:21px;letter-spacing:-.015em}.itemBody p{line-height:1.55;min-height:78px}.tag{border-radius:0;background:#f5f9fb}.quoteBtn{width:100%;min-height:46px}
-.benefits{background:#fff}.benefit{min-height:165px}.benefit .ico{font-weight:700}.aboutGrid{gap:48px}.aboutPhoto{min-height:410px;box-shadow:var(--shadow)}.aboutText p{line-height:1.7}.metric{background:#edf3f6}.serviceGrid{gap:18px}.service{min-height:365px;box-shadow:none}.service:hover{box-shadow:var(--shadow);transform:translateY(-3px);transition:.2s}.serviceVisual{height:195px}.serviceBody b{font-size:16px}.serviceBody .btn{min-height:40px;background:#fff}.projectsShowcase{gap:18px}.projectCase{box-shadow:none}.projectCase:hover{box-shadow:var(--shadow)}.projectCaseVisual{height:240px}.projectCaseBody p{line-height:1.55}.projectCaseMeta span{background:#f5f9fb}.process{gap:18px}.step{min-height:190px;box-shadow:0 10px 25px rgba(0,0,0,.08)}.docs{gap:18px}.doc{box-shadow:none}.doc:hover{box-shadow:var(--shadow);transform:translateY(-2px);transition:.2s}
-.cta{background:linear-gradient(120deg,#051522,#08263b)}.ctaGrid{gap:65px}.cta h2{font-weight:900;letter-spacing:-.035em}.form input,.form select,.form textarea{border-radius:0;background:#071f31}.form input:focus,.form select:focus,.form textarea:focus{outline:2px solid #1686f7;outline-offset:1px}.fileLabel input[type=file]{border-radius:0}.footer{background:#020e18;border-top:1px solid #16364b}.foot{align-items:start}.foot a:hover{color:#fff}
-.quoteModal{backdrop-filter:blur(3px)}.quoteBox{border-top:4px solid var(--blue);border-radius:0}.quoteBox input,.quoteBox textarea{border-radius:0}.quoteBox .btn{width:100%}
-/* Consistent visual treatment for all project/service/catalog imagery */
-.serviceVisual img,.projectCaseVisual img,.projectVisual img,.itemVisual img{display:block;filter:saturate(.92) contrast(1.04)}
-@media(max-width:1100px){.brand{min-width:0}.heroCards{left:24px;right:24px}.serviceGrid{gap:14px}.projectsShowcase{gap:14px}}
-@media(max-width:700px){html{scroll-padding-top:70px}.wrap{padding-left:18px;padding-right:18px}.nav{height:70px}.brand img{width:50px;height:44px}.hero{min-height:0}.hero .wrap{padding-top:66px}.heroCards{padding:0 18px 18px}.heroCard{grid-template-columns:38% 62%}.heroCard h3{font-size:18px}.section{padding:62px 0}.head h2{font-size:31px}.itemVisual{height:205px}.aboutPhoto{min-height:280px}.service{min-height:0}.serviceVisual{height:205px}.projectCaseVisual{height:215px}.step{min-height:0}.benefit{min-height:0}.ctaGrid{gap:35px}.foot{gap:22px}}
-
-/* Screenshot-inspired hero: compact navigation, cinematic panorama and three featured product cards */
-.top .nav{height:62px;min-height:62px;gap:16px}
-.brand{min-width:250px;gap:9px}
-.brand img{width:50px;height:46px}
-.brand strong{font-size:17px;letter-spacing:.01em}
-.brand small{font-size:7px;letter-spacing:1.15px}
-.menu{gap:14px;font-size:10px}
-.menu a{padding:23px 0}
-.menu a:after{bottom:14px}
-.phone b{font-size:12px}
-.phone small{display:none}
-.top>.wrap>.btn{min-height:34px;padding:0 13px;font-size:10px;white-space:nowrap}
-.hero{min-height:405px}
-.hero:before{background:linear-gradient(90deg,rgba(2,14,25,.91) 0%,rgba(3,18,30,.78) 34%,rgba(3,18,30,.28) 67%,rgba(3,18,30,.10) 100%),url('hero-clean.jpg') center 44%/cover}
-.hero .wrap{padding-top:28px;padding-bottom:150px}
-.eyebrow{font-size:10px;letter-spacing:2px;margin-bottom:8px}
-.hero h1{font-size:clamp(34px,4.2vw,58px);line-height:.98;letter-spacing:-1.4px;max-width:640px;margin-bottom:10px}
-.heroLead{font-size:12px;line-height:1.35;max-width:470px;margin-bottom:16px}
-.facts{gap:18px;margin-bottom:16px;max-width:530px}
-.fact{gap:7px;max-width:112px;border:0;padding-left:0}
-.fact i{font-size:18px;color:#dce8ef}
-.fact b{font-size:8px;line-height:1.35;font-weight:500;letter-spacing:.035em}
-.heroButtons{gap:12px}
-.heroButtons .btn{min-height:36px;font-size:10px;padding:0 18px}
-.heroCards{left:22px;right:22px;gap:8px}
-.heroCard{min-height:112px;grid-template-columns:38% 62%;background:rgba(5,23,37,.94);border-color:rgba(135,176,201,.32);box-shadow:none}
-.heroCard img{min-height:112px;filter:saturate(.8) contrast(1.08)}
-.heroCard div{padding:13px 11px}
-.heroCard h3{font-size:12px;line-height:1.15;margin:0 0 6px;padding-right:20px}
-.heroCard p{font-size:9px;line-height:1.3;color:#b8c8d3}
-.arrow{width:25px;height:25px;line-height:22px;font-size:17px;border-radius:50%;float:right;margin-left:4px}
-.hero+ .section{padding-top:36px}
-@media(min-width:1200px){
- .hero{min-height:520px}
- .hero .wrap{padding-top:48px;padding-bottom:168px}
- .hero h1{font-size:clamp(54px,4.5vw,70px)}
- .heroLead{font-size:15px;max-width:570px}
- .fact b{font-size:9px}
- .heroCard{min-height:140px}
- .heroCard img{min-height:140px}
- .heroCard h3{font-size:16px}
- .heroCard p{font-size:10px}
-}
-@media(max-width:1100px){
- .top .nav{gap:12px}
- .brand{min-width:220px}
- .menu{gap:10px;font-size:9px}
- .phone b{font-size:11px}
- .hero{min-height:430px}
- .hero .wrap{padding-top:38px;padding-bottom:145px}
- .heroCards{left:20px;right:20px}
-}
-@media(max-width:700px){
- .top .nav{height:68px;min-height:68px}
- .brand{min-width:0}
- .brand img{width:46px;height:42px}
- .brand strong{font-size:15px}
- .brand small{font-size:6px;letter-spacing:.7px}
- .hero{min-height:0}
- .hero:before{background:linear-gradient(90deg,rgba(2,14,25,.88),rgba(3,18,30,.50)),url('hero-clean.jpg') 57% center/cover}
- .hero .wrap{padding-top:44px;padding-bottom:24px}
- .hero h1{font-size:clamp(35px,9vw,48px);letter-spacing:-1px}
- .heroLead{font-size:13px;max-width:360px}
- .facts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:18px 0}
- .fact{max-width:none}
- .fact b{font-size:9px}
- .heroButtons{flex-direction:row;flex-wrap:wrap}
- .heroButtons .btn{flex:1;min-width:145px;padding:0 10px}
- .heroCards{position:relative;left:auto;right:auto;bottom:auto;padding:0 18px 18px;grid-template-columns:1fr;gap:8px}
- .heroCard{min-height:112px;grid-template-columns:34% 66%}
- .heroCard img{min-height:112px}
- .heroCard h3{font-size:15px}
- .heroCard p{font-size:11px}
-}
-
-
-/* Layout correction after checking the live page at desktop width */
-@media(min-width:1101px){
- .wrap{max-width:1600px}
- .top .nav{max-width:1700px}
- .hero{min-height:520px}
- .hero .wrap{padding-top:40px;padding-bottom:165px}
- .hero h1{max-width:880px;font-size:clamp(48px,4.2vw,68px);line-height:.98}
- .heroLead{max-width:570px;font-size:14px}
- .heroCards{left:50%;right:auto;width:calc(100vw - 64px);max-width:1640px;transform:translateX(-50%);gap:10px}
- .heroCard{min-height:126px;grid-template-columns:38% 62%}
- .heroCard img{min-height:126px}
- .heroCard h3{font-size:15px}
- .heroCard p{font-size:10px}
-}
-@media(min-width:1101px) and (max-width:1400px){
- .wrap{max-width:1240px}
- .hero h1{max-width:760px;font-size:clamp(48px,4.2vw,60px)}
- .heroCards{width:calc(100vw - 48px)}
-}
-
-
-/* Keep featured product cards anchored to the full hero, not the centered text container */
-@media(min-width:701px){
- .hero .wrap.heroCards{position:absolute;left:22px;right:22px;bottom:0;width:auto;max-width:none;margin:0;padding:0;transform:none;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
- .hero .wrap.heroCards .heroCard{min-width:0}
-}
-@media(min-width:1101px){
- .hero .wrap.heroCards{left:22px;right:22px;width:auto;max-width:none}
-}
-
-
-/* Final hero card sizing fix: fixed-height cards and enough room below the headline */
-@media(min-width:701px){
- .hero{min-height:600px!important;height:600px!important}
- .hero .wrap.heroCards{top:auto!important;bottom:0!important;height:136px!important;min-height:136px!important;align-items:stretch!important}
- .hero .wrap.heroCards .heroCard{height:136px!important;min-height:136px!important;max-height:136px!important;overflow:hidden!important}
- .hero .wrap.heroCards .heroCard img{display:block;width:100%!important;height:134px!important;min-height:0!important;max-height:134px!important;object-fit:cover!important;align-self:stretch}
- .hero .wrap.heroCards .heroCard>div{min-width:0;overflow:hidden;padding:14px 12px!important}
- .hero .wrap.heroCards .heroCard h3{font-size:15px!important;line-height:1.15!important}
- .hero .wrap.heroCards .heroCard p{font-size:10px!important;line-height:1.3!important}
-}
-@media(min-width:1101px){
- .hero .wrap:not(.heroCards){padding-top:40px!important;padding-bottom:175px!important}
- .hero h1{max-width:900px!important}
-}
-
-
-/* Keep all three featured cards fully inside the hero banner */
-@media(min-width:701px){
- .hero{min-height:650px!important;height:650px!important;overflow:hidden!important}
- .hero .wrap.heroCards{bottom:22px!important}
-}
-@media(min-width:1101px){
- .hero .wrap:not(.heroCards){padding-bottom:190px!important}
-}
-
-
-/* Product artwork should be fully visible rather than cropped */
-@media(min-width:701px){
- .hero .wrap.heroCards .heroCard img{object-fit:contain!important;object-position:center bottom!important;background:#08253a!important}
- .hero .wrap.heroCards .heroCard{height:150px!important;min-height:150px!important;max-height:150px!important}
- .hero .wrap.heroCards .heroCard img{height:148px!important;max-height:148px!important}
- .hero .wrap.heroCards .heroCard>div{padding:15px 14px!important}
- .hero .wrap.heroCards{bottom:14px!important}
-}
-
-
-/* Reference-led desktop hero rebuild: restore compact editorial composition */
-@media(min-width:1101px){
- .hero{height:610px!important;min-height:610px!important;overflow:hidden!important}
- .hero:before{background:linear-gradient(90deg,rgba(2,14,25,.91) 0%,rgba(3,18,30,.72) 34%,rgba(3,18,30,.22) 72%,rgba(3,18,30,.08) 100%),url('hero-clean.jpg') center center/cover!important}
- .hero>.wrap:not(.heroCards){width:min(1180px,calc(100% - 60px))!important;margin:0 auto!important;padding:38px 0 180px!important}
- .hero .eyebrow{font-size:11px!important;margin-bottom:10px!important;letter-spacing:2px!important}
- .hero h1{font-size:clamp(46px,4.15vw,62px)!important;line-height:.98!important;letter-spacing:-1.5px!important;max-width:760px!important;margin:0 0 10px!important}
- .heroLead{font-size:14px!important;line-height:1.35!important;max-width:470px!important;margin-bottom:16px!important}
- .hero .facts{gap:24px!important;margin-bottom:18px!important;max-width:630px!important}
- .hero .fact{gap:8px!important;max-width:135px!important}
- .hero .fact i{font-size:21px!important}
- .hero .fact b{font-size:10px!important;line-height:1.25!important}
- .heroButtons{gap:12px!important}
- .heroButtons .btn{min-height:40px!important;padding:0 20px!important;font-size:12px!important}
- .hero .wrap.heroCards{position:absolute!important;left:50%!important;right:auto!important;transform:translateX(-50%)!important;bottom:18px!important;width:min(1180px,calc(100% - 60px))!important;height:112px!important;min-height:112px!important;padding:0!important;display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:10px!important}
- .hero .wrap.heroCards .heroCard{height:112px!important;min-height:112px!important;max-height:112px!important;grid-template-columns:36% 64%!important;align-items:stretch!important;background:rgba(4,24,39,.96)!important;border:1px solid rgba(131,166,188,.35)!important}
- .hero .wrap.heroCards .heroCard img{width:100%!important;height:110px!important;min-height:110px!important;max-height:110px!important;object-fit:cover!important;object-position:center center!important;background:#08253a!important}
- .hero .wrap.heroCards .heroCard>div{position:relative!important;min-width:0!important;padding:13px 12px!important;overflow:hidden!important}
- .hero .wrap.heroCards .heroCard h3{font-size:15px!important;line-height:1.12!important;margin:0 24px 6px 0!important}
- .hero .wrap.heroCards .heroCard p{font-size:10px!important;line-height:1.28!important;color:#b9cbd7!important}
- .hero .wrap.heroCards .arrow{position:absolute!important;top:10px!important;right:10px!important;width:24px!important;height:24px!important;line-height:21px!important;font-size:17px!important}
-}
-@media(min-width:701px) and (max-width:1100px){
- .hero{height:590px!important;min-height:590px!important}
- .hero>.wrap:not(.heroCards){padding-top:45px!important;padding-bottom:175px!important}
- .hero h1{font-size:clamp(42px,5.2vw,58px)!important;max-width:700px!important}
- .hero .wrap.heroCards{left:24px!important;right:24px!important;bottom:14px!important;gap:8px!important}
- .hero .wrap.heroCards .heroCard{height:112px!important;min-height:112px!important;grid-template-columns:36% 64%!important}
- .hero .wrap.heroCards .heroCard img{height:110px!important;object-fit:cover!important}
- .hero .wrap.heroCards .heroCard>div{padding:10px!important}
- .hero .wrap.heroCards .heroCard h3{font-size:14px!important}
- .hero .wrap.heroCards .heroCard p{font-size:10px!important}
-}
-
-
-/* Correct the last layout regression: reference uses near-full-width hero content and cards */
-@media(min-width:1101px){
- .hero{height:610px!important;min-height:610px!important}
- .hero>.wrap:not(.heroCards){width:calc(100% - 56px)!important;max-width:none!important;margin:0 28px!important;padding:38px 0 180px!important}
- .hero h1{max-width:780px!important}
- .heroLead{max-width:500px!important}
- .hero .wrap.heroCards{left:22px!important;right:22px!important;top:auto!important;bottom:18px!important;transform:none!important;width:auto!important;max-width:none!important;height:112px!important;min-height:112px!important;margin:0!important;padding:0!important;grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:10px!important}
- .hero .wrap.heroCards .heroCard{height:112px!important;min-height:112px!important;max-height:112px!important;grid-template-columns:36% 64%!important}
-}
-
-
-/* Final alignment pass: match the reference's centered content column */
-@media(min-width:1101px){
-  .hero .wrap{max-width:1080px!important;margin-left:auto!important;margin-right:auto!important;padding-left:0!important;padding-right:0!important}
-  .hero .wrap{padding-top:40px!important;padding-bottom:165px!important}
-  .hero h1{max-width:760px!important;font-size:clamp(48px,4.1vw,68px)!important}
-  .heroLead{max-width:500px!important}
-  .facts{max-width:500px!important}
-  .heroCards{left:50%!important;right:auto!important;width:calc(100% - 40px)!important;max-width:1060px!important;transform:translateX(-50%)!important;grid-template-columns:repeat(3,minmax(0,1fr))!important}
-  .heroCard{min-height:126px!important;grid-template-columns:38% 62%!important}
-  .heroCard img{min-height:126px!important}
-  .heroCard h3{font-size:15px!important}
-  .heroCard p{font-size:10px!important}
-}
-@media(max-width:1100px) and (min-width:701px){
-  .hero .wrap{max-width:900px;margin:0 auto;padding-left:24px;padding-right:24px}
-  .heroCards{width:calc(100% - 40px);left:20px;right:20px;transform:none}
-}
-
-
-/* Reference-match correction: restore full-width, left-aligned hero composition */
-@media (min-width:1101px){
-  .top .wrap{max-width:none!important;padding-left:28px!important;padding-right:28px!important}
-  .nav{height:76px!important;min-height:76px!important;gap:22px!important}
-  .brand{min-width:340px!important;gap:14px!important}
-  .brand img{width:70px!important;height:60px!important}
-  .brand strong{font-size:22px!important}
-  .brand small{font-size:9px!important}
-  .menu{gap:18px!important}
-  .hero{min-height:640px!important}
-  .hero:before{background:linear-gradient(90deg,rgba(2,14,25,.91) 0%,rgba(3,18,30,.72) 35%,rgba(3,18,30,.24) 70%,rgba(3,18,30,.10) 100%),url('hero-clean.jpg') center/cover!important}
-  .hero .wrap{max-width:none!important;margin:0!important;padding:50px 28px 210px!important}
-  .hero h1{font-size:clamp(52px,4.3vw,72px)!important;max-width:780px!important;letter-spacing:-2px!important;margin-bottom:14px!important}
-  .hero .eyebrow{margin-bottom:12px!important}
-  .heroLead{max-width:490px!important;font-size:15px!important;margin-bottom:20px!important}
-  .facts{max-width:500px!important;gap:18px!important;margin-bottom:22px!important}
-  .fact{max-width:135px!important}
-  .fact b{font-size:10px!important}
-  .heroCards{left:22px!important;right:22px!important;bottom:14px!important;width:auto!important;max-width:none!important;transform:none!important;grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:10px!important}
-  .heroCard{min-height:136px!important;grid-template-columns:36% 64%!important}
-  .heroCard img{min-height:136px!important}
-  .heroCard div{padding:15px!important}
-  .heroCard h3{font-size:18px!important}
-  .heroCard p{font-size:11px!important}
-}
-@media (min-width:701px) and (max-width:1100px){
-  .hero .wrap{max-width:none!important;padding:55px 24px 190px!important}
-  .hero h1{max-width:720px!important}
-  .heroCards{left:20px!important;right:20px!important;bottom:12px!important;grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:8px!important}
-  .heroCard{grid-template-columns:35% 65%!important;min-height:115px!important}
-  .heroCard img{min-height:115px!important}
-  .heroCard div{padding:12px!important}
-  .heroCard h3{font-size:15px!important}
-}
-@media(max-width:700px){
-  .hero .wrap{padding-top:58px!important;padding-bottom:28px!important}
-  .hero h1{font-size:42px!important;letter-spacing:-1.5px!important}
-  .heroCards{position:relative!important;left:auto!important;right:auto!important;bottom:auto!important;transform:none!important;width:auto!important;padding:0 18px 18px!important;grid-template-columns:1fr!important}
-}
-
-
-/* FINAL hero layout fix: target only the hero copy wrapper, not the card row */
-@media (min-width:1101px){
-  .hero > .wrap:not(.heroCards){width:100%!important;max-width:none!important;margin:0!important;padding:50px 28px 210px!important}
-  .hero > .wrap:not(.heroCards) h1{width:min(1100px,calc(100vw - 56px))!important;max-width:1100px!important;font-size:clamp(58px,4.1vw,76px)!important;line-height:.96!important;letter-spacing:-2px!important}
-  .hero > .wrap.heroCards{position:absolute!important;left:22px!important;right:22px!important;bottom:14px!important;width:auto!important;max-width:none!important;margin:0!important;padding:0!important;display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:10px!important}
-  .hero > .wrap.heroCards .heroCard{min-height:136px!important}
-}
-@media (min-width:701px) and (max-width:1100px){
-  .hero > .wrap:not(.heroCards){width:100%!important;max-width:none!important;margin:0!important;padding:55px 24px 190px!important}
-  .hero > .wrap:not(.heroCards) h1{max-width:900px!important;width:calc(100vw - 48px)!important}
-  .hero > .wrap.heroCards{position:absolute!important;left:20px!important;right:20px!important;bottom:12px!important;width:auto!important;margin:0!important;padding:0!important}
-}
-@media(max-width:700px){
-  .hero > .wrap:not(.heroCards){padding:58px 18px 28px!important}
-  .hero > .wrap:not(.heroCards) h1{width:auto!important;max-width:100%!important}
-  .hero > .wrap.heroCards{position:relative!important;left:auto!important;right:auto!important;bottom:auto!important;width:auto!important;margin:0!important;padding:0 18px 18px!important}
-}
-
-
-/* === Reference composition override: left-aligned hero + full-width category strip === */
-@media (min-width:1101px) {
-  .hero { height:650px!important; min-height:650px!important; }
-  .hero > .wrap:not(.heroCards) {
-    width:auto!important; max-width:none!important; margin:0!important;
-    padding:48px 28px 190px!important;
-  }
-  .hero > .wrap:not(.heroCards) .eyebrow { margin-bottom:12px!important; }
-  .hero > .wrap:not(.heroCards) h1 {
-    width:auto!important; max-width:900px!important;
-    font-size:clamp(58px,4.1vw,76px)!important;
-    line-height:.96!important; letter-spacing:-2px!important;
-    margin:0 0 14px!important;
-  }
-  .hero > .wrap:not(.heroCards) .heroLead { max-width:500px!important; font-size:15px!important; }
-  .hero > .wrap:not(.heroCards) .facts { max-width:560px!important; }
-  .hero > .wrap.heroCards {
-    position:absolute!important; left:16px!important; right:16px!important;
-    top:auto!important; bottom:14px!important; transform:none!important;
-    width:auto!important; max-width:none!important; height:112px!important;
-    min-height:112px!important; margin:0!important; padding:0!important;
-    display:grid!important; grid-template-columns:repeat(3,minmax(0,1fr))!important; gap:10px!important;
-  }
-  .hero > .wrap.heroCards .heroCard {
-    height:112px!important; min-height:112px!important; max-height:112px!important;
-    grid-template-columns:36% 64%!important;
-  }
-  .hero > .wrap.heroCards .heroCard img {
-    height:110px!important; min-height:110px!important; max-height:110px!important;
-    object-fit:contain!important; object-position:center bottom!important;
-  }
-}
-@media (min-width:701px) and (max-width:1100px) {
-  .hero { height:590px!important; min-height:590px!important; }
-  .hero > .wrap:not(.heroCards) { width:auto!important; max-width:none!important; margin:0!important; padding:44px 24px 180px!important; }
-  .hero > .wrap:not(.heroCards) h1 { max-width:760px!important; width:auto!important; font-size:clamp(44px,5.5vw,62px)!important; }
-  .hero > .wrap.heroCards { left:16px!important; right:16px!important; width:auto!important; bottom:14px!important; transform:none!important; }
-}
-@media (max-width:700px) {
-  .hero { height:auto!important; min-height:0!important; }
-  .hero > .wrap:not(.heroCards) { padding:48px 18px 28px!important; }
-  .hero > .wrap:not(.heroCards) h1 { width:auto!important; max-width:100%!important; font-size:clamp(35px,9vw,48px)!important; }
-  .hero > .wrap.heroCards { position:relative!important; left:auto!important; right:auto!important; bottom:auto!important; width:auto!important; max-width:none!important; transform:none!important; padding:0 18px 18px!important; grid-template-columns:1fr!important; }
-}
-
-
-/* Corrective override: anchor the hero copy to the viewport's left edge. */
-@media (min-width:1101px) {
-  section.hero { position:relative!important; min-height:650px!important; height:650px!important; }
-  section.hero > div.wrap:first-child {
-    position:relative!important; display:block!important;
-    width:100%!important; max-width:none!important; min-width:0!important;
-    margin:0!important; padding:48px 28px 190px!important;
-    box-sizing:border-box!important; left:0!important; right:auto!important;
-    transform:none!important;
-  }
-  section.hero > div.wrap:first-child .eyebrow,
-  section.hero > div.wrap:first-child h1,
-  section.hero > div.wrap:first-child .heroLead,
-  section.hero > div.wrap:first-child .facts,
-  section.hero > div.wrap:first-child .heroButtons {
-    margin-left:0!important; text-align:left!important;
-  }
-  section.hero > div.wrap:first-child h1 {
-    display:block!important; width:min(1100px, calc(100vw - 56px))!important;
-    max-width:1100px!important; font-size:clamp(58px,4.1vw,76px)!important;
-    line-height:.96!important; letter-spacing:-2px!important;
-  }
-  section.hero > div.wrap.heroCards {
-    position:absolute!important; display:grid!important;
-    left:16px!important; right:16px!important; bottom:14px!important; top:auto!important;
-    width:auto!important; max-width:none!important; margin:0!important; padding:0!important;
-    transform:none!important; grid-template-columns:repeat(3,minmax(0,1fr))!important;
-    gap:10px!important; box-sizing:border-box!important;
-  }
-}
-
+:root{--bg:#071522;--panel:#0b2131;--panel2:#102b3e;--text:#f4f7fa;--muted:#b5c3ce;--blue:#1689ed;--line:rgba(206,225,239,.22);--max:1240px}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:82px}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--text);background:#fff}a{color:inherit;text-decoration:none}button,input,textarea{font:inherit}.wrap{width:min(var(--max),calc(100% - 48px));margin-inline:auto}
+header{height:78px;background:#071522;border-bottom:1px solid var(--line);display:flex;align-items:center;position:relative;z-index:5}.head{display:flex;align-items:center;justify-content:space-between;gap:28px}.brand{display:flex;align-items:center;gap:12px;min-width:255px}.brand img{width:48px;height:48px;object-fit:contain}.brand strong{display:block;font-size:20px;letter-spacing:-.5px}.brand small{display:block;color:#91a7b8;font-size:9px;letter-spacing:1.5px;margin-top:5px}.nav{display:flex;align-items:center;gap:21px;font-size:12px;color:#d5e0e8}.nav a:hover{color:#55b2ff}.headRight{display:flex;align-items:center;gap:18px;white-space:nowrap;font-size:13px;font-weight:700}.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:46px;padding:0 22px;border:1px solid transparent;background:var(--blue);color:#fff;font-weight:700;font-size:13px;transition:.2s;cursor:pointer}.btn:hover{background:#0873ce}.btn.outline{background:transparent;border-color:#8194a4}.btn.outline:hover{border-color:#fff}.menuBtn{display:none;background:none;border:1px solid var(--line);color:#fff;padding:10px}
+.hero{min-height:600px;position:relative;display:flex;align-items:flex-start;overflow:hidden;background:#071522 url('hero-clean.jpg') center 43%/cover no-repeat}.hero:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(3,15,25,.96) 0%,rgba(3,15,25,.82) 34%,rgba(3,15,25,.2) 78%),linear-gradient(0deg,rgba(3,15,25,.55),transparent 45%)}.heroInner{position:relative;z-index:1;padding-top:74px;padding-bottom:185px}.eyebrow{font-size:11px;font-weight:700;letter-spacing:2.3px;color:#73c4ff;text-transform:uppercase;margin:0 0 18px}.hero h1{font-size:clamp(44px,5.2vw,72px);line-height:.98;letter-spacing:-2px;text-transform:uppercase;max-width:790px;margin:0 0 20px;font-weight:800}.heroLead{max-width:560px;color:#d6e0e8;font-size:17px;line-height:1.55;margin:0 0 25px}.proofs{display:flex;flex-wrap:wrap;gap:22px;margin:0 0 28px;color:#e2edf5;font-size:11px;text-transform:uppercase;letter-spacing:.4px}.proofs span:before{content:"✓";color:#56b9ff;font-size:17px;margin-right:8px}.actions{display:flex;flex-wrap:wrap;gap:12px}.heroCards{position:absolute;z-index:2;left:0;right:0;bottom:18px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}.heroCard{min-height:120px;display:grid;grid-template-columns:35% 1fr;align-items:stretch;background:rgba(5,25,39,.94);border:1px solid var(--line);transition:.2s}.heroCard:hover{border-color:#4bb2ff;transform:translateY(-3px)}.heroCard img{width:100%;height:100%;min-height:120px;object-fit:cover;background:#0b2a3e}.heroCard div{padding:20px 16px}.heroCard h3{font-size:17px;line-height:1.15;margin:0 0 8px}.heroCard p{font-size:12px;line-height:1.45;color:#b7c8d5;margin:0}.section{padding:82px 0;color:#0b1b29}.sectionHead{display:flex;align-items:end;justify-content:space-between;gap:32px;margin-bottom:32px}.sectionHead h2{font-size:clamp(30px,3.5vw,44px);letter-spacing:-1px;line-height:1.05;margin:0}.sectionHead p{max-width:470px;color:#5f7180;line-height:1.6;font-size:15px;margin:0}.products{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}.product{border:1px solid #d7e0e6;background:#fff}.product img{display:block;width:100%;height:220px;object-fit:cover;background:#092337}.productBody{padding:22px}.productBody .tag{font-size:10px;text-transform:uppercase;letter-spacing:1px;color:#1689ed;font-weight:700}.productBody h3{font-size:22px;margin:9px 0}.productBody p{font-size:14px;line-height:1.55;color:#61717d;min-height:44px}.textLink{display:inline-block;margin-top:10px;color:#0878d1;font-size:13px;font-weight:700}.dark{background:#071522;color:#fff}.dark .sectionHead p{color:#a9bac7}.services{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1px;background:var(--line);border:1px solid var(--line)}.service{background:#0b2131;padding:26px;min-height:150px}.service b{display:block;font-size:17px;margin-bottom:12px}.service p{color:#adbfcc;font-size:13px;line-height:1.5;margin:0}.aboutGrid{display:grid;grid-template-columns:1fr 1fr;gap:55px;align-items:center}.aboutVisual{min-height:340px;background:#092337 url('infra_light.jpg') center/cover no-repeat;position:relative}.aboutVisual:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(5,20,31,.5),transparent)}.aboutText p{color:#61717d;line-height:1.7;font-size:15px}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:15px;margin-top:25px}.stat{border-top:2px solid var(--blue);padding-top:14px}.stat strong{display:block;font-size:23px;color:#10283a}.stat span{font-size:12px;color:#687a88}.contact{background:linear-gradient(110deg,#071522,#10334b);padding:70px 0}.contactGrid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}.contact h2{font-size:clamp(32px,4vw,48px);line-height:1.05;margin:0 0 18px}.contact p{color:#b8c8d4;line-height:1.6}.contactDetails{margin-top:24px;font-size:18px;font-weight:700}.contactDetails small{display:block;color:#9fb1bf;font-size:12px;font-weight:400;margin-top:8px}.form{background:#fff;padding:28px;color:#0b1b29}.form h3{font-size:22px;margin:0 0 18px}.form input,.form textarea{display:block;width:100%;border:1px solid #d5dee5;padding:14px;margin-bottom:12px;color:#0b1b29;background:#fff}.form textarea{min-height:90px;resize:vertical}.form .btn{width:100%}.form small{display:block;font-size:11px;line-height:1.5;color:#6c7a84;margin-top:12px}footer{background:#040d15;color:#aebdc8;padding:25px 0;font-size:12px}.foot{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+@media(max-width:1050px){.nav{gap:12px}.brand{min-width:auto}.headRight .phone{display:none}.hero{min-height:640px}.heroCards{grid-template-columns:repeat(3,minmax(0,1fr))}.heroCard{grid-template-columns:30% 1fr}.heroCard div{padding:15px 12px}.heroCard h3{font-size:15px}.services{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:760px){.wrap{width:min(100% - 32px,var(--max))}header{height:70px}.brand img{width:40px;height:40px}.brand strong{font-size:16px}.brand small{font-size:8px}.menuBtn{display:block}.nav{display:none;position:absolute;left:0;right:0;top:69px;padding:18px 24px;background:#071522;border-top:1px solid var(--line);flex-direction:column;align-items:flex-start;gap:18px}.nav.open{display:flex}.headRight .btn{display:none}.hero{min-height:780px;background-position:58% center}.hero:before{background:linear-gradient(90deg,rgba(3,15,25,.94),rgba(3,15,25,.5)),linear-gradient(0deg,rgba(3,15,25,.65),transparent 60%)}.heroInner{padding-top:54px;padding-bottom:330px}.hero h1{font-size:clamp(38px,10vw,58px);letter-spacing:-1.2px}.heroLead{font-size:15px}.proofs{gap:12px}.proofs span{max-width:145px;font-size:10px}.heroCards{grid-template-columns:1fr;bottom:14px;gap:8px}.heroCard{min-height:88px;grid-template-columns:105px 1fr}.heroCard img{min-height:88px;height:88px}.heroCard div{padding:13px}.heroCard h3{font-size:15px;margin-bottom:4px}.heroCard p{font-size:11px}.section{padding:58px 0}.sectionHead{display:block}.sectionHead p{margin-top:14px}.products{grid-template-columns:1fr}.product img{height:210px}.services{grid-template-columns:1fr}.service{min-height:auto}.aboutGrid,.contactGrid{grid-template-columns:1fr;gap:28px}.aboutVisual{min-height:230px;order:2}.stats{gap:8px}.stat strong{font-size:19px}.stat span{font-size:11px}.contact{padding:55px 0}.form{padding:22px}.foot{display:block}.foot span{display:block;margin-top:10px}}
 </style>
-<link rel="stylesheet" href="hero-reference.css?v=3">
-
-<script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Organization","name":"ТрансЭнергоСталь","url":"https://trenst.ru/","telephone":"+7 936 169-33-33","email":"sale@trenst.ru","address":{"@type":"PostalAddress","addressLocality":"Санкт-Петербург","addressCountry":"RU"},"description":"Производство стальных опор освещения, контактной сети и высокомачтовых конструкций."}
-</script></head>
+</head>
 <body>
-<header class="top"><div class="wrap nav"><a class="brand" href="#top"><img src="logo-transenergostal.png" alt="ТрансЭнергоСталь"><div><strong>ТрансЭнергоСталь</strong><small>НАДЁЖНЫЕ ОПОРЫ БОЛЬШИХ ПРОЕКТОВ</small></div></a><nav class="menu"><a href="#about">О компании</a><a href="#catalog">Продукция</a><a href="#projects">Проекты</a><a href="#services">Услуги</a><a href="#production">Производство</a><a href="#docs">Документация</a><a href="#contacts">Контакты</a></nav><div class="phone"><b>+7 936 169-33-33</b><small>Пн–Пт 9:00–18:00</small></div><a class="btn" href="#contacts">Заказать звонок</a></div></header>
+<header>
+ <div class="wrap head">
+  <a class="brand" href="#top" aria-label="ТрансЭнергоСталь — главная"><img src="logo-transenergostal.png" alt=""><span><strong>ТрансЭнергоСталь</strong><small>НАДЁЖНЫЕ ОПОРЫ БОЛЬШИХ ПРОЕКТОВ</small></span></a>
+  <nav class="nav" id="nav"><a href="#about">О компании</a><a href="#products">Продукция</a><a href="#services">Услуги</a><a href="#production">Производство</a><a href="#contacts">Контакты</a></nav>
+  <div class="headRight"><a class="phone" href="tel:+79361693333">+7 936 169-33-33</a><a class="btn outline" href="#contacts">Заказать звонок</a><button class="menuBtn" id="menuBtn" aria-label="Открыть меню">☰</button></div>
+ </div>
+</header>
 <main id="top">
-<section class="hero"><div class="wrap"><div class="eyebrow">ПРОИЗВОДСТВО СТАЛЬНЫХ КОНСТРУКЦИЙ</div><h1>ОПОРЫ ОСВЕЩЕНИЯ<br>И КОНТАКТНОЙ СЕТИ</h1><p class="heroLead">Комплексные решения: проектирование, производство, поставка и монтаж для инфраструктурных объектов.</p><div class="facts"><div class="fact"><i>✓</i><b>ГОСТ и ТУ<br>под проект</b></div><div class="fact"><i>⚙</i><b>Индивидуальные<br>решения</b></div><div class="fact"><i>▣</i><b>Доставка<br>по России</b></div><div class="fact"><i>↗</i><b>Расчёт и КП<br>в течение 1 дня*</b></div></div><div class="heroButtons"><a class="btn blue" href="#contacts">Получить расчёт →</a><a class="btn" href="#catalog">Перейти в каталог</a></div></div><div class="wrap heroCards"><a class="heroCard" href="#catalog" onclick="showTab('lighting')"><img src="lighting-poles.svg" alt="Опоры освещения"><div><span class="arrow">›</span><h3>Опоры<br>освещения</h3><p>Гранёные, трубчатые, силовые и несиловые решения.</p></div></a><a class="heroCard" href="#catalog" onclick="showTab('contact')"><img src="contact-network.svg" alt="Опоры контактной сети"><div><span class="arrow">›</span><h3>Опоры<br>контактной сети</h3><p>Для трамвайных, троллейбусных и железнодорожных линий.</p></div></a><a class="heroCard" href="#catalog" onclick="showTab('mast')"><img src="high-mast.svg" alt="Высокомачтовые опоры"><div><span class="arrow">›</span><h3>Высокомачтовые<br>опоры</h3><p>ВМО, МГФ-М, ВМОН, МГФ-С для больших площадей.</p></div></a></div></section>
-<section class="section" id="catalog"><div class="wrap"><div class="head"><h2>Каталог продукции</h2><p>Подбираем типоразмер, высоту, нагрузку, исполнение и покрытие под конкретный проект. Точные характеристики определяются расчётом.</p><div class="catalogCount">33 товарные позиции · единый стандарт визуализации · запрос цены</div></div><div class="tabs catalogTabs"><button class="tab" data-tab="contact" onclick="showTab('contact')">Контактная сеть</button><button class="tab" data-tab="mast" onclick="showTab('mast')">Высокомачтовые</button><button class="tab" data-tab="lighting" onclick="showTab('lighting')">Освещение</button><button class="tab" data-tab="cable" onclick="showTab('cable')">Кабель и провод</button><button class="tab" data-tab="pipes" onclick="showTab('pipes')">Высоковольтные трубы</button><button class="tab" data-tab="couplings" onclick="showTab('couplings')">Кабельные муфты</button><button class="tab" data-tab="lights" onclick="showTab('lights')">Светильники</button><button class="tab" data-tab="embedded" onclick="showTab('embedded')">Закладные детали</button><button class="tab" data-tab="insulators" onclick="showTab('insulators')">Изоляторы КС</button><button class="tab" data-tab="fittings" onclick="showTab('fittings')">Арматура КС</button></div><div class="catalog" id="catalogGrid"></div></div></section>
-<section class="section gray"><div class="wrap"><div class="head"><h2>Почему работают с нами</h2><p>Проектная проработка, производство, контроль и поставка — в одном понятном процессе.</p></div><div class="benefits"><div class="benefit"><div class="ico">◇</div><b>Качество и контроль</b><span>Контроль геометрии, сварных соединений и покрытия.</span></div><div class="benefit"><div class="ico">▥</div><b>Проектный подход</b><span>Решения по чертежам и исходным данным заказчика.</span></div><div class="benefit"><div class="ico">⚙</div><b>Производство</b><span>Изготовление и сопровождение заказа в едином контуре.</span></div><div class="benefit"><div class="ico">▣</div><b>Логистика</b><span>Организация отгрузки по Санкт-Петербургу и России.</span></div><div class="benefit"><div class="ico">✓</div><b>Документация</b><span>Комплект документов согласуется под задачу.</span></div></div></div></section>
-<section class="section" id="about"><div class="wrap aboutGrid"><div class="aboutPhoto"><div class="stamp"><b>СТАЛЬНЫЕ КОНСТРУКЦИИ</b><br><span>для инфраструктурных проектов</span></div></div><div class="aboutText"><div class="eyebrow">О КОМПАНИИ</div><h2>Стальные опоры для инфраструктуры, где важна надёжность</h2><p>«ТрансЭнергоСталь» производит стальные опоры освещения, контактной сети и высокомачтовые конструкции для городов, дорог, электротранспорта и промышленных объектов.</p><p>Работаем с ГОСТ, ТУ и индивидуальными проектами. Полный цикл — от проектирования и расчёта до производства и поставки.</p><a class="btn blue" href="#contacts">Обсудить задачу →</a><div class="metrics"><div class="metric"><strong>Проектные</strong><span>и серийные решения</span></div><div class="metric"><strong>ГОСТ / ТУ</strong><span>по требованиям проекта</span></div><div class="metric"><strong>Расчёт</strong><span>нагрузок и исполнения</span></div><div class="metric"><strong>Россия</strong><span>поставка по регионам</span></div></div></div></div></section>
-<section class="section" id="services"><div class="wrap"><div class="head"><h2>Проектирование и монтаж</h2><p>Инженерные и строительно-монтажные услуги для объектов городского электротранспорта, освещения и инфраструктуры.</p></div><div class="serviceGrid"><article class="service"><div class="serviceVisual"><img src="contact-network.svg" alt="Проектирование линий контактной сети городского электрического транспорта"></div><div class="serviceBody"><b>Проектирование линий контактной сети городского электрического транспорта</b><p>Проработка трассы, опор, узлов подвески и исходных данных проекта.</p><a class="btn" href="#contacts">Подробнее →</a></div></article><article class="service"><div class="serviceVisual"><img src="luminaires.svg" alt="Проектирование уличного освещения"></div><div class="serviceBody"><b>Проектирование уличного освещения</b><p>Решения для городских улиц, дорог, магистралей и прилегающих территорий.</p><a class="btn" href="#contacts">Подробнее →</a></div></article><article class="service"><div class="serviceVisual"><img src="infra_light.jpg" alt="Проектирование освещения портовой инфраструктуры"></div><div class="serviceBody"><b>Проектирование освещения портовой инфраструктуры</b><p>Освещение портов, причалов, складских и логистических площадок.</p><a class="btn" href="#contacts">Подробнее →</a></div></article><article class="service"><div class="serviceVisual"><img src="vmo.jpg" alt="Проектирование освещения спортивных объектов"></div><div class="serviceBody"><b>Проектирование освещения спортивных объектов</b><p>Решения для стадионов, спортивных комплексов и открытых площадок.</p><a class="btn" href="#contacts">Подробнее →</a></div></article><article class="service"><div class="serviceVisual"><img src="lighting-poles.svg" alt="Строительно-монтажные работы"></div><div class="serviceBody"><b>Строительно-монтажные работы</b><p>Монтаж опор, оборудования и элементов инфраструктуры в рамках проекта.</p><a class="btn" href="#contacts">Подробнее →</a></div></article></div><div class="serviceNote">Состав работ, проектные решения и стоимость определяются исходными данными, техническим заданием и условиями объекта.</div></div></section>
-<section class="section gray" id="projects"><div class="wrap"><div class="head"><h2>Наши проекты</h2><p>Примеры объектов и проектных направлений, для которых можем выполнить проектирование, подобрать оборудование, изготовить конструкции и организовать строительно-монтажные работы.</p></div><div class="projectsShowcase"><article class="projectCase"><div class="projectCaseVisual"><img src="contact-network.svg" alt="Линии контактной сети городского электрического транспорта"></div><div class="projectCaseBody"><b>Линии контактной сети</b><p>Трамвайные и троллейбусные маршруты, опоры, подвеска и комплектующие.</p><div class="projectCaseMeta"><span>Проектирование</span><span>Поставка</span></div></div></article><article class="projectCase"><div class="projectCaseVisual"><img src="luminaires.svg" alt="Уличное освещение"></div><div class="projectCaseBody"><b>Уличное освещение</b><p>Городские улицы, дороги и магистрали — от расчёта до комплектации.</p><div class="projectCaseMeta"><span>Освещение</span><span>Проект</span></div></div></article><article class="projectCase"><div class="projectCaseVisual"><img src="infra_light.jpg" alt="Освещение портовой инфраструктуры"></div><div class="projectCaseBody"><b>Портовая инфраструктура</b><p>Причалы, терминалы, складские и логистические территории.</p><div class="projectCaseMeta"><span>Порт</span><span>Освещение</span></div></div></article><article class="projectCase"><div class="projectCaseVisual"><img src="vmo.jpg" alt="Освещение спортивных объектов"></div><div class="projectCaseBody"><b>Спортивные объекты</b><p>Стадионы, открытые площадки и спортивные комплексы с высокомачтовым освещением.</p><div class="projectCaseMeta"><span>Высокомачтовое</span><span>Расчёт</span></div></div></article><article class="projectCase"><div class="projectCaseVisual"><img src="luminaires.svg" alt="Освещение промышленных объектов"></div><div class="projectCaseBody"><b>Промышленные объекты</b><p>Производственные площадки, склады и территории предприятий.</p><div class="projectCaseMeta"><span>Промышленность</span><span>Поставка</span></div></div></article><article class="projectCase"><div class="projectCaseVisual"><img src="hero-clean.jpg" alt="Дорожная инфраструктура"></div><div class="projectCaseBody"><b>Дорожная инфраструктура</b><p>Магистрали и транспортные узлы с комплексными решениями по освещению.</p><div class="projectCaseMeta"><span>Инфраструктура</span><span>Комплексное решение</span></div></div></article></div><div class="projectNote">Фото в блоке используются как визуальные иллюстрации направлений. Конкретные реализованные кейсы, объёмы и характеристики добавляются после предоставления материалов по объектам.</div></div></section>
-<section class="section" id="production"><div class="wrap"><div class="head"><h2>От запроса до отгрузки</h2><p>Прозрачная последовательность работ — от исходных данных до готовой партии.</p></div><div class="process"><div class="step"><div class="num">01</div><h3>Заявка</h3><p>Получаем чертёж, спецификацию или исходные данные.</p></div><div class="step"><div class="num">02</div><h3>Расчёт</h3><p>Определяем исполнение, нагрузки, габариты и стоимость.</p></div><div class="step"><div class="num">03</div><h3>Производство</h3><p>Изготавливаем изделия и проводим контроль качества.</p></div><div class="step"><div class="num">04</div><h3>Отгрузка</h3><p>Согласовываем комплектацию, транспорт и сроки.</p></div></div></div></section>
-<section class="section gray" id="docs"><div class="wrap"><div class="head"><h2>Документация</h2><p>Присылайте исходные данные — PDF, DWG, XLSX и другие распространённые форматы.</p></div><div class="docs"><div class="doc"><div class="ico">▤</div><b>Чертежи и спецификации</b><span>Проверяем состав и исходные параметры.</span></div><div class="doc"><div class="ico">▧</div><b>Технические требования</b><span>Высота, нагрузка, климат, покрытие.</span></div><div class="doc"><div class="ico">▥</div><b>Нестандартные изделия</b><span>Расчёт и проработка по проекту.</span></div><div class="doc"><div class="ico">□</div><b>Комплект поставки</b><span>Согласуем документы до отгрузки.</span></div></div></div></section>
-<section class="section cta" id="contacts"><div class="wrap ctaGrid"><div><div class="eyebrow">ПОЛУЧИТЬ КОММЕРЧЕСКОЕ ПРЕДЛОЖЕНИЕ</div><h2>Отправьте задачу — подготовим расчёт</h2><p>Укажите тип опор, количество и сроки. Если есть чертёж или спецификация — приложите её менеджеру.</p><div class="contactLine"><b>Санкт-Петербург</b><br><a href="tel:+79361693333">+7 936 169-33-33</a></div></div><form class="form" id="contactForm" onsubmit="sendForm(event)" enctype="multipart/form-data"><input required name="name" placeholder="Имя / компания"><input required name="phone" type="tel" placeholder="Телефон"><input name="email" type="email" placeholder="E-mail"><select name="direction"><option value="">Выберите направление</option><option>Опоры освещения</option><option>Опоры контактной сети</option><option>Высокомачтовые опоры</option><option>Нестандартное изделие</option><option>Заказать звонок</option></select><textarea name="message" placeholder="Количество, высота, город, сроки..."></textarea><label class="fileLabel">Прикрепить чертёж / спецификацию <input name="attachment" type="file" accept=".pdf,.dwg,.xlsx,.xls,.jpg,.jpeg,.png" multiple></label><input type="hidden" name="_subject" value="Заявка с сайта ТрансЭнергоСталь"><input type="hidden" name="_captcha" value="true"><button class="btn blue" type="submit">Отправить заявку →</button><small>Можно прикрепить PDF, DWG, XLS/XLSX, JPG или PNG. Файлы до 10 МБ суммарно.</small><div id="formStatus" class="formStatus" aria-live="polite"></div></form></div></section>
+<section class="hero">
+ <div class="wrap heroInner">
+  <p class="eyebrow">Производство стальных конструкций</p>
+  <h1>Опоры освещения<br>и контактной сети</h1>
+  <p class="heroLead">Надёжные решения для городов, дорог и транспортной инфраструктуры. Подбор, изготовление и поставка конструкций под задачи вашего проекта.</p>
+  <div class="proofs"><span>Производство под проект</span><span>Индивидуальные решения</span><span>Доставка по России</span><span>Расчёт по заявке</span></div>
+  <div class="actions"><a class="btn" href="#contacts">Получить расчёт <span>→</span></a><a class="btn outline" href="#products">Наша продукция</a></div>
+ </div>
+ <div class="wrap heroCards">
+  <a class="heroCard" href="#products"><img src="lighting-poles.svg" alt="Опоры освещения"><div><h3>Опоры освещения</h3><p>Гранёные, трубчатые, силовые и несиловые решения.</p></div></a>
+  <a class="heroCard" href="#products"><img src="contact-network.svg" alt="Опоры контактной сети"><div><h3>Опоры контактной сети</h3><p>Для трамвайных, троллейбусных и железнодорожных линий.</p></div></a>
+  <a class="heroCard" href="#products"><img src="high-mast.svg" alt="Высокомачтовые опоры"><div><h3>Высокомачтовые опоры</h3><p>Для дорог, стадионов, промышленных и общественных территорий.</p></div></a>
+ </div>
+</section>
+<section class="section" id="products">
+ <div class="wrap">
+  <div class="sectionHead"><h2>Основные направления</h2><p>Помогаем подобрать тип конструкции, высоту, нагрузку и исполнение. Технические характеристики и стоимость рассчитываются под конкретный объект.</p></div>
+  <div class="products">
+   <article class="product"><img src="lighting-poles.svg" alt="Стальные опоры освещения"><div class="productBody"><span class="tag">Освещение</span><h3>Опоры освещения</h3><p>ОГК, ОГС, ОГКС и другие типы гранёных и трубчатых опор.</p><a class="textLink" href="#contacts" data-product="Опоры освещения">Запросить цену →</a></div></article>
+   <article class="product"><img src="contact-network.svg" alt="Опоры контактной сети"><div class="productBody"><span class="tag">Транспорт</span><h3>Опоры контактной сети</h3><p>Металлоконструкции для городского электротранспорта и железнодорожной инфраструктуры.</p><a class="textLink" href="#contacts" data-product="Опоры контактной сети">Запросить цену →</a></div></article>
+   <article class="product"><img src="high-mast.svg" alt="Высокомачтовые опоры"><div class="productBody"><span class="tag">Большие пространства</span><h3>Высокомачтовые опоры</h3><p>ВМО, ВМОН и решения для освещения больших территорий.</p><a class="textLink" href="#contacts" data-product="Высокомачтовые опоры">Запросить цену →</a></div></article>
+  </div>
+ </div>
+</section>
+<section class="section dark" id="services">
+ <div class="wrap">
+  <div class="sectionHead"><h2>Что мы предлагаем</h2><p>От подбора конструкции до поставки готовой продукции на объект.</p></div>
+  <div class="services">
+   <div class="service"><b>01 / Подбор</b><p>Помогаем определить тип опоры и исходные параметры для расчёта.</p></div>
+   <div class="service"><b>02 / Проектирование</b><p>Проектные решения для освещения и контактной сети.</p></div>
+   <div class="service"><b>03 / Изготовление</b><p>Производство стальных конструкций по согласованным требованиям.</p></div>
+   <div class="service"><b>04 / Поставка</b><p>Комплектация заказа и доставка по России.</p></div>
+  </div>
+ </div>
+</section>
+<section class="section" id="about">
+ <div class="wrap aboutGrid">
+  <div class="aboutVisual" role="img" aria-label="Опоры освещения в городской инфраструктуре"></div>
+  <div class="aboutText"><p class="eyebrow">ТрансЭнергоСталь</p><h2>Инженерный подход к каждому объекту</h2><p>Работаем с задачами освещения и транспортной инфраструктуры. Учитываем назначение объекта, условия эксплуатации и требования проекта, чтобы подобрать подходящее техническое решение.</p><p>Для предварительного расчёта отправьте тип изделия, количество, основные параметры и, если есть, проектную документацию.</p><div class="stats"><div class="stat"><strong>Под проект</strong><span>Подбор исполнения</span></div><div class="stat"><strong>По России</strong><span>Поставка продукции</span></div><div class="stat"><strong>Один контакт</strong><span>Связь по заявке</span></div></div></div>
+ </div>
+</section>
+<section class="contact" id="contacts">
+ <div class="wrap contactGrid">
+  <div><p class="eyebrow">Обсудим ваш проект</p><h2>Запросите расчёт стоимости</h2><p>Оставьте контакты и кратко опишите задачу. Можно указать тип опоры, количество и сроки — это поможет подготовить предметный ответ.</p><div class="contactDetails"><a href="tel:+79361693333">+7 936 169-33-33</a><small>ТрансЭнергоСталь · Санкт-Петербург · Работаем по России</small></div></div>
+  <form class="form" action="https://formsubmit.co/sale@trenst.ru" method="POST" enctype="multipart/form-data">
+   <input type="hidden" name="_subject" value="Новая заявка с сайта ТрансЭнергоСталь">
+   <input type="hidden" name="_template" value="table">
+   <input type="hidden" name="_next" value="https://trenst.ru/?sent=1#contacts">
+   <h3>Оставить заявку</h3>
+   <input name="name" placeholder="Ваше имя" autocomplete="name" required>
+   <input name="phone" type="tel" placeholder="Телефон для связи" autocomplete="tel" required>
+   <input name="product" id="productField" placeholder="Какая продукция интересует?">
+   <textarea name="message" placeholder="Кратко о проекте: тип, количество, сроки"></textarea>
+   <button class="btn" type="submit">Отправить заявку →</button>
+   <small>Нажимая кнопку, вы соглашаетесь на обработку персональных данных для ответа на обращение.</small>
+  </form>
+ </div>
+</section>
 </main>
-<footer class="footer" id="contactsFooter"><div class="wrap foot"><div><b>ТрансЭнергоСталь</b><br>Опоры освещения и контактной сети</div><div>Санкт-Петербург<br><a href="tel:+79361693333">+7 936 169-33-33</a><br>Пн–Пт 9:00–18:00</div><div>© 2026 ТрансЭнергоСталь<br>Политика конфиденциальности</div></div></footer>
-
-<div class="quoteModal" id="quoteModal" onclick="if(event.target===this)closeQuote()"><div class="quoteBox"><button class="close" onclick="closeQuote()">×</button><h3 id="quoteTitle">Запрос цены</h3><p>Оставьте контакты и, если есть, приложите исходные данные проекта.</p><form id="quoteForm" onsubmit="sendQuote(event)" enctype="multipart/form-data"><input type="hidden" name="product" id="quoteProduct"><label>Ваше имя</label><input name="name" id="quoteName" required placeholder="Имя или компания"><label>Телефон</label><input name="phone" type="tel" required placeholder="+7 ___ ___-__-__"><label>E-mail</label><input name="email" type="email" placeholder="E-mail"><label>Комментарий</label><textarea name="message" placeholder="Количество, город, высота, тип опоры или другие данные"></textarea><label class="fileLabel">Прикрепить файл <input name="attachment" type="file" accept=".pdf,.dwg,.xlsx,.xls,.jpg,.jpeg,.png" multiple></label><input type="hidden" name="_subject" value="Запрос цены с сайта ТрансЭнергоСталь"><input type="hidden" name="_captcha" value="true"><button class="btn blue" type="submit">Отправить запрос →</button><div id="quoteStatus" class="formStatus" aria-live="polite"></div><div class="quoteNote">Точные характеристики и стоимость определяются по заданию, нагрузкам и комплектации.</div></form></div></div>
+<footer><div class="wrap foot"><span>© <span id="year"></span> ТрансЭнергоСталь</span><span>Опоры освещения и контактной сети</span><a href="mailto:sale@trenst.ru">sale@trenst.ru</a></div></footer>
 <script>
-const products={
-contact:[
-['ОГКС','Опоры городской контактной сети для трамвайных и троллейбусных линий.','Контактная сеть','contact-network.svg'],
-['ОГСКС','Стальные опоры контактной сети для городского электротранспорта.','Контактная сеть','contact-network.svg'],
-['ОГСКСп','Исполнение по проектным требованиям и расчётным нагрузкам.','Проектное исполнение','contact-network.svg'],
-['ТФГ / ОКСГФ','Типовые и проектные решения для подвески контактной сети.','Контактная сеть','contact-network.svg'],
-['ОС','Специальные опоры для инфраструктурных и контактных сетей.','Специальные','contact-network.svg']],
-mast:[
-['ВМО','Высокомачтовая опора с мобильной короной для больших площадей.','Мобильная корона','high-mast.svg'],
-['МГФ-М','Мачта с мобильной короной для обслуживания светильников с земли.','Мобильная корона','high-mast.svg'],
-['ВМОН','Высокомачтовая опора со стационарной короной.','Стационарная корона','high-mast.svg'],
-['МГФ-С','Высокомачтовая мачта со стационарной короной.','Стационарная корона','high-mast.svg']],
-lighting:[
-['СФГ','Гранёные силовые и несиловые опоры освещения.','Гранёная','lighting-poles.svg'],
-['ОГС','Гранёные опоры общего назначения для наружного освещения.','Гранёная','lighting-poles.svg'],
-['Гранёные опоры','Типовые и индивидуальные исполнения под светильники и кронштейны.','Освещение','lighting-poles.svg'],
-['Специальные','Нестандартные решения по чертежам и исходным данным заказчика.','Проектные','lighting-poles.svg']],
-cable:[
-['Кабель транспортный','Кабель и провод для систем электроснабжения и транспортной инфраструктуры.','Кабель и провод','cable.svg'],
-['Провод контактный','Провод для контактных линий городского электрического транспорта.','Кабель и провод','cable.svg'],
-['Кабель силовой','Силовые кабельные решения для объектов инфраструктуры.','Кабель','cable.svg']],
-pipes:[
-['Трубы ВВ для кабельных линий','Высоковольтные трубы и защитные элементы для кабельных линий.','Высоковольтные трубы','pipes.svg'],
-['Трубы защитные','Элементы прокладки и защиты кабельных трасс.','Кабельные линии','pipes.svg']],
-couplings:[
-['Муфты кабельные','Соединительные и оконцевательные решения для кабельных линий.','Кабельные муфты','couplings.svg'],
-['Муфты соединительные','Комплектация соединения кабельных линий под параметры проекта.','Соединение','couplings.svg'],
-['Муфты концевые','Оконцевание кабеля и подготовка подключения оборудования.','Оконцевание','couplings.svg']],
-lights:[
-['Светильники дорожные','Светильники для автомобильных дорог, улиц и транспортных объектов.','Освещение','luminaires.svg'],
-['Светильники промышленные','Осветительное оборудование для промышленных и складских площадок.','Освещение','luminaires.svg'],
-['Светильники для инфраструктуры','Комплектация опор освещения светильниками под проект.','Освещение','luminaires.svg']],
-embedded:[
-['Закладные детали фундамента','Закладные элементы для установки стальных опор и мачт.','Фундамент','embedded.svg'],
-['Анкерные группы','Анкерные элементы и крепёж для фундаментов опор.','Крепление','embedded.svg'],
-['Закладные элементы','Нестандартные закладные детали по чертежам заказчика.','Проектные','embedded.svg']],
-insulators:[
-['Изоляторы трамвайной сети','Изоляторы для контактной сети трамвая по параметрам проекта.','Изоляторы КС','insulators.svg'],
-['Изоляторы троллейбусной сети','Изоляторы для контактной сети троллейбуса и её элементов.','Изоляторы КС','insulators.svg'],
-['Изоляторы подвески','Изоляционные элементы для узлов контактной сети.','Контактная сеть','insulators.svg']],
-fittings:[
-['Арматура контактной сети','Арматура для подвески, крепления и соединения элементов контактной сети.','Арматура КС','fittings.svg'],
-['Крепёж контактной сети','Крепёжные элементы для узлов подвески и опор.','Арматура КС','fittings.svg'],
-['Элементы подвески','Комплектующие контактной сети под конкретную схему подвески.','Арматура КС','fittings.svg']]
-};
-const total=Object.values(products).reduce((a,b)=>a+b.length,0);
-function showTab(k){document.querySelectorAll('.tab').forEach(t=>t.classList.toggle('active',t.dataset.tab===k));document.getElementById('catalogGrid').innerHTML=products[k].map(p=>`<article class="item"><div class="itemVisual"><img src="${p[3]}" alt="${p[0]}"></div><div class="itemBody"><h3>${p[0]}</h3><p>${p[1]}</p><div class="itemMeta"><span class="tag">${p[2]}</span><span class="tag">по проекту</span></div><button class="quoteBtn" onclick="openQuote('${p[0].replace(/'/g,"\'")}')">Запросить цену →</button></div></article>`).join('')}
-function openQuote(product){document.getElementById('quoteProduct').value=product;document.getElementById('quoteTitle').textContent='Запрос цены — '+product;document.getElementById('quoteModal').classList.add('open');document.getElementById('quoteName').focus()}
-function closeQuote(){document.getElementById('quoteModal').classList.remove('open')}
-async function submitToFormSubmit(form,statusId,afterSuccess){const status=document.getElementById(statusId);status.className='formStatus';status.textContent='Отправляем заявку…';const data=new FormData(form);data.append('_to','sale@trenst.ru');try{const r=await fetch('https://formsubmit.co/ajax/sale@trenst.ru',{method:'POST',body:data,headers:{Accept:'application/json'}});const j=await r.json();if(!r.ok||j.success===false)throw new Error(j.message||'Ошибка отправки');status.className='formStatus ok';status.textContent='Заявка отправлена. Мы свяжемся с вами по указанному телефону.';if(afterSuccess)afterSuccess()}catch(err){status.className='formStatus err';status.textContent='Не удалось отправить заявку. Позвоните нам: +7 936 169-33-33';console.error(err)}}
-function sendForm(e){e.preventDefault();submitToFormSubmit(e.target,'formStatus',()=>{e.target.reset()})}
-function sendQuote(e){e.preventDefault();submitToFormSubmit(e.target,'quoteStatus',()=>{e.target.reset();setTimeout(closeQuote,1200)})}
-showTab('lighting');
+const menuBtn=document.getElementById('menuBtn'),nav=document.getElementById('nav');
+menuBtn.addEventListener('click',()=>{nav.classList.toggle('open');menuBtn.setAttribute('aria-expanded',nav.classList.contains('open')?'true':'false')});
+nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>nav.classList.remove('open')));
+document.querySelectorAll('[data-product]').forEach(a=>a.addEventListener('click',()=>{document.getElementById('productField').value=a.dataset.product}));
+document.getElementById('year').textContent=new Date().getFullYear();
+if(new URLSearchParams(location.search).get('sent')==='1'){const form=document.querySelector('.form');form.insertAdjacentHTML('afterbegin','<p style="color:#1689ed;font-weight:bold">Спасибо! Если форма активирована, заявка отправлена.</p>')}
 </script>
-</body></html>
+</body>
+</html>
