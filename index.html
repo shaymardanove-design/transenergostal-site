@@ -464,6 +464,43 @@ html{scroll-behavior:smooth;scroll-padding-top:82px}body{font-family:Arial,Helve
   section.hero>div.wrap:first-child h1{width:auto!important;max-width:760px!important;font-size:clamp(42px,5vw,56px)!important}
 }
 
+
+/* Composition correction v2: align headline block and keep feature cards compact/centered */
+@media (min-width:1101px){
+  section.hero{height:520px!important;min-height:520px!important}
+  section.hero>div.wrap:first-child{
+    position:relative!important;box-sizing:border-box!important;
+    width:100%!important;max-width:none!important;margin:0!important;
+    padding:42px 0 170px clamp(300px,31vw,540px)!important;
+  }
+  section.hero>div.wrap:first-child h1{
+    width:900px!important;max-width:calc(100vw - clamp(300px,31vw,540px) - 40px)!important;
+    font-size:clamp(48px,3.7vw,58px)!important;
+    line-height:.98!important;letter-spacing:-1.7px!important;
+    white-space:normal!important;word-break:normal!important;overflow-wrap:normal!important;
+    margin:0 0 10px!important;
+  }
+  section.hero>div.wrap:first-child .heroLead{max-width:520px!important;font-size:13px!important;margin-bottom:15px!important}
+  section.hero>div.wrap:first-child .facts{max-width:540px!important;gap:18px!important;margin-bottom:15px!important}
+  section.hero>div.wrap:first-child .fact b{font-size:10px!important}
+  section.hero>div.wrap:first-child .heroButtons{display:flex!important;flex-direction:row!important;gap:10px!important}
+  section.hero>div.wrap:first-child .heroButtons .btn{width:auto!important;min-height:36px!important}
+  section.hero>div.wrap.heroCards{
+    position:absolute!important;left:50%!important;right:auto!important;bottom:10px!important;top:auto!important;
+    width:min(900px,calc(100vw - 48px))!important;max-width:900px!important;
+    margin:0!important;padding:0!important;transform:translateX(-50%)!important;
+    grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:8px!important;
+  }
+  section.hero>div.wrap.heroCards .heroCard{
+    height:88px!important;min-height:88px!important;max-height:88px!important;
+    grid-template-columns:35% 65%!important;
+  }
+  section.hero>div.wrap.heroCards .heroCard img{height:86px!important;min-height:86px!important}
+  section.hero>div.wrap.heroCards .heroCard div{padding:10px 9px!important}
+  section.hero>div.wrap.heroCards .heroCard h3{font-size:12px!important}
+  section.hero>div.wrap.heroCards .heroCard p{font-size:9px!important}
+}
+
 </style>
 <link rel="stylesheet" href="hero-reference.css?v=3">
 
