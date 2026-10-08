@@ -219,6 +219,17 @@ html{scroll-behavior:smooth;scroll-padding-top:82px}body{font-family:Arial,Helve
  .hero .wrap.heroCards .heroCard p{font-size:10px!important}
 }
 
+
+/* Correct the last layout regression: reference uses near-full-width hero content and cards */
+@media(min-width:1101px){
+ .hero{height:610px!important;min-height:610px!important}
+ .hero>.wrap:not(.heroCards){width:calc(100% - 56px)!important;max-width:none!important;margin:0 28px!important;padding:38px 0 180px!important}
+ .hero h1{max-width:780px!important}
+ .heroLead{max-width:500px!important}
+ .hero .wrap.heroCards{left:22px!important;right:22px!important;top:auto!important;bottom:18px!important;transform:none!important;width:auto!important;max-width:none!important;height:112px!important;min-height:112px!important;margin:0!important;padding:0!important;grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:10px!important}
+ .hero .wrap.heroCards .heroCard{height:112px!important;min-height:112px!important;max-height:112px!important;grid-template-columns:36% 64%!important}
+}
+
 </style>
 
 <script type="application/ld+json">
