@@ -436,6 +436,34 @@ html{scroll-behavior:smooth;scroll-padding-top:82px}body{font-family:Arial,Helve
   }
 }
 
+
+/* HERO DESKTOP FIX — keep the title on two lines and reserve clear space for the cards */
+@media (min-width:1101px){
+  section.hero{height:650px!important;min-height:650px!important}
+  section.hero>div.wrap:first-child{
+    width:100%!important;max-width:none!important;margin:0!important;
+    padding:48px 28px 190px!important;display:block!important;
+  }
+  section.hero>div.wrap:first-child h1{
+    display:block!important;width:780px!important;max-width:calc(100vw - 56px)!important;
+    font-size:clamp(50px,3.7vw,66px)!important;line-height:.98!important;
+    letter-spacing:-1.8px!important;overflow-wrap:normal!important;word-break:normal!important;
+    margin:0 0 14px!important;
+  }
+  section.hero>div.wrap:first-child .heroLead{max-width:500px!important;font-size:15px!important}
+  section.hero>div.wrap:first-child .facts{max-width:540px!important;margin-bottom:18px!important}
+  section.hero>div.wrap:first-child .heroButtons{display:flex!important;flex-direction:row!important;gap:12px!important}
+  section.hero>div.wrap.heroCards{
+    left:22px!important;right:22px!important;bottom:14px!important;
+    width:auto!important;max-width:none!important;transform:none!important;
+    grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:10px!important;
+  }
+  section.hero>div.wrap.heroCards .heroCard{height:112px!important;min-height:112px!important;max-height:112px!important}
+}
+@media (min-width:701px) and (max-width:1100px){
+  section.hero>div.wrap:first-child h1{width:auto!important;max-width:760px!important;font-size:clamp(42px,5vw,56px)!important}
+}
+
 </style>
 <link rel="stylesheet" href="hero-reference.css?v=3">
 
