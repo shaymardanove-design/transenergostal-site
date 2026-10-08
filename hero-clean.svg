@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="900" viewBox="0 0 1920 900">
+<defs>
+ <linearGradient id="sky" x2="0" y2="1"><stop stop-color="#071a31"/><stop offset=".55" stop-color="#123b63"/><stop offset=".78" stop-color="#f18b50"/><stop offset="1" stop-color="#102c43"/></linearGradient>
+ <linearGradient id="water" x2="0" y2="1"><stop stop-color="#12384e"/><stop offset="1" stop-color="#031827"/></linearGradient>
+ <linearGradient id="steel" x2="1" y2=".2"><stop stop-color="#101f2c"/><stop offset=".35" stop-color="#9eafbc"/><stop offset=".52" stop-color="#283b4a"/><stop offset=".8" stop-color="#0a1724"/><stop offset="1" stop-color="#526a7b"/></linearGradient>
+ <linearGradient id="glass" x2="1" y2="0"><stop stop-color="#092943"/><stop offset=".45" stop-color="#1c5a7c"/><stop offset=".7" stop-color="#081d36"/><stop offset="1" stop-color="#2c7192"/></linearGradient>
+ <linearGradient id="shade" x2="1"><stop stop-color="#020d18" stop-opacity=".72"/><stop offset=".42" stop-color="#041629" stop-opacity=".26"/><stop offset="1" stop-color="#041629" stop-opacity=".02"/></linearGradient>
+ <filter id="glow"><feGaussianBlur stdDeviation="7"/></filter>
+</defs>
+<rect width="1920" height="900" fill="url(#sky)"/>
+<path d="M0 365 Q180 330 350 385 T690 355 T1050 390 T1400 340 T1920 360 V570 H0Z" fill="#071d34" opacity=".45"/>
+<g fill="#081c30" opacity=".9">
+ <path d="M880 550V390h38v160zM925 550V430h28v120zM965 550V360h48v190zM1025 550V415h36v135zM1070 550V330h52v220zM1132 550V385h35v165zM1180 550V300h55v250zM1244 550V360h34v190zM1288 550V270h64v280zM1360 550V335h46v215zM1418 550V300h43v250zM1470 550V250h58v300zM1538 550V340h45v210zM1590 550V295h68v255zM1665 550V350h48v200zM1720 550V270h55v280zM1785 550V330h50v220zM1845 550V285h75v265z"/>
+</g>
+<g stroke="#f9b65c" stroke-width="4" opacity=".95">
+ <path d="M894 425h5m42 62h5m36-105h5m56 56h5m35-80h5m60 95h5m41-130h5m66 81h5m41-145h5m72 88h5m35-60h5m69-110h5m54 160h5m50-105h5m63 130h5m54-75h5m62-105h5m50 90h5m60-120h5"/>
+</g>
+<rect y="575" width="1920" height="325" fill="url(#water)"/>
+<path d="M0 640 L1920 600" stroke="#e8a45a" stroke-width="3" opacity=".8"/>
+<g stroke="#ffc06c" stroke-width="3" opacity=".65">
+ <path d="M920 650v45m50-50v70m72-75v55m80-55v75m65-70v90m65-85v65m82-80v85m75-80v60m90-75v90m75-75v65m70-90v110m75-95v70m65-75v90m70-80v70"/>
+</g>
+<g fill="#f8b65f" opacity=".18" filter="url(#glow)">
+ <ellipse cx="755" cy="385" rx="95" ry="26"/><ellipse cx="1510" cy="610" rx="280" ry="18"/><ellipse cx="1300" cy="700" rx="420" ry="16"/>
+</g>
+<!-- distant illuminated bridge -->
+<path d="M0 670 Q330 655 600 676 T1050 660 T1450 680 T1920 650" fill="none" stroke="#9bb2c0" stroke-width="8" opacity=".75"/>
+<path d="M180 673L340 540L505 675M340 540V676M250 675L340 540L430 675" fill="none" stroke="#9bb2c0" stroke-width="3" opacity=".7"/>
+<g stroke="#f7b15b" stroke-width="4"><path d="M35 657v-28m90 30v-26m120 29v-25m190 27v-28m125 28v-25m250 22v-25m175 22v-25m180 20v-25m180 25v-25m170 25v-25m150 20v-25"/></g>
+<!-- signature skyscraper right -->
+<path d="M1650 630 L1758 115 L1785 630Z" fill="url(#glass)" stroke="#b7d4e3" stroke-width="3"/>
+<path d="M1758 115L1766 630M1678 500H1777M1690 435H1775M1700 370H1772M1710 305H1768M1722 240H1765M1736 175H1761" stroke="#75a7c4" stroke-width="3" opacity=".85"/>
+<path d="M1674 555H1779M1684 485H1775M1697 415H1771M1710 345H1768M1724 275H1764M1738 205H1760" stroke="#ffcf7b" stroke-width="5" opacity=".9"/>
+<path d="M1758 115L1758 70" stroke="#ffb65e" stroke-width="5"/><circle cx="1758" cy="112" r="15" fill="#ffb65e" opacity=".35" filter="url(#glow)"/>
+<!-- foreground contact-network support on left -->
+<g>
+ <path d="M95 900L112 0H174L201 900Z" fill="url(#steel)" stroke="#9fb1bf" stroke-width="3"/>
+ <path d="M126 0L144 900M170 0L184 900" stroke="#d0dbe2" stroke-width="3" opacity=".5"/>
+ <rect x="73" y="115" width="124" height="22" rx="2" fill="url(#steel)" stroke="#9daebb" stroke-width="3"/>
+ <rect x="76" y="330" width="128" height="24" fill="url(#steel)" stroke="#9daebb" stroke-width="3"/>
+ <rect x="68" y="610" width="145" height="27" fill="url(#steel)" stroke="#9daebb" stroke-width="3"/>
+ <path d="M142 125L380 195L600 165L875 245L1125 218" fill="none" stroke="#c2d1da" stroke-width="7"/>
+ <path d="M142 345L380 250L610 310L870 280L1125 350" fill="none" stroke="#8199aa" stroke-width="4"/>
+ <path d="M142 625L410 520L650 555L900 480L1170 515" fill="none" stroke="#8da4b4" stroke-width="4"/>
+ <path d="M340 184v68m240-86v125m290-48v83m250-106v87" stroke="#9eb4c3" stroke-width="4"/>
+ <g fill="#091725" stroke="#a9bbc8" stroke-width="4"><circle cx="145" cy="126" r="17"/><circle cx="145" cy="343" r="17"/><circle cx="145" cy="624" r="17"/><circle cx="380" cy="195" r="11"/><circle cx="600" cy="165" r="11"/></g>
+</g>
+<!-- streetlight warm pool -->
+<path d="M320 0V280Q320 340 390 360L445 378" fill="none" stroke="#1b2b38" stroke-width="26"/>
+<path d="M320 0V280Q320 340 390 360L445 378" fill="none" stroke="#93a5b1" stroke-width="3" opacity=".7"/>
+<path d="M437 369l53 9-4 16-54-7z" fill="#d9e7ef"/><path d="M440 377l48 5" stroke="#fff4c6" stroke-width="9" filter="url(#glow)"/><path d="M440 377l48 5" stroke="#ffe4a2" stroke-width="5"/>
+<rect width="1920" height="900" fill="url(#shade)"/>
+</svg>
