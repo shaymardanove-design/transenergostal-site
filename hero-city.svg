@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="800" viewBox="0 0 1920 800">
+<defs>
+ <linearGradient id="sky" x2="0" y2="1"><stop stop-color="#05264a"/><stop offset=".55" stop-color="#07345b"/><stop offset="1" stop-color="#061827"/></linearGradient>
+ <linearGradient id="tower" x2="1" y2="0"><stop stop-color="#0a3754"/><stop offset=".45" stop-color="#176184"/><stop offset=".7" stop-color="#082a45"/><stop offset="1" stop-color="#04182a"/></linearGradient>
+ <linearGradient id="steel" x2="1" y2="0"><stop stop-color="#07121b"/><stop offset=".45" stop-color="#647b8b"/><stop offset=".62" stop-color="#172b3a"/><stop offset="1" stop-color="#030b12"/></linearGradient>
+ <linearGradient id="ground" x2="0" y2="1"><stop stop-color="#061b2b" stop-opacity="0"/><stop offset="1" stop-color="#020b14"/></linearGradient>
+ <radialGradient id="glow"><stop stop-color="#ffca69" stop-opacity=".9"/><stop offset="1" stop-color="#ffb43d" stop-opacity="0"/></radialGradient>
+ <filter id="soft"><feGaussianBlur stdDeviation="18"/></filter>
+</defs>
+<rect width="1920" height="800" fill="url(#sky)"/>
+<circle cx="1020" cy="365" r="190" fill="#1670a3" opacity=".12" filter="url(#soft)"/>
+<!-- distant city skyline on the right -->
+<g fill="#04192c" opacity=".94">
+ <path d="M760 800V435h54v365M832 800V350h72v450M920 800V478h46v322M985 800V300h65v500M1070 800V395h42v405M1125 800V235h77v565M1210 800V340h52v460M1272 800V190h82v610M1372 800V275h54v525M1438 800V370h43v430M1495 800V220h72v580M1582 800V335h46v465M1645 800V280h88v520M1747 800V410h57v390M1817 800V320h62v480M1887 800V390h33v410"/>
+</g>
+<g fill="#f3b45a" opacity=".88">
+ <g><rect x="850" y="386" width="5" height="9"/><rect x="872" y="415" width="5" height="9"/><rect x="1005" y="340" width="5" height="9"/><rect x="1025" y="380" width="5" height="9"/><rect x="1148" y="285" width="5" height="9"/><rect x="1175" y="320" width="5" height="9"/><rect x="1290" y="235" width="5" height="9"/><rect x="1317" y="278" width="5" height="9"/><rect x="1400" y="315" width="5" height="9"/><rect x="1518" y="268" width="5" height="9"/><rect x="1540" y="310" width="5" height="9"/><rect x="1670" y="322" width="5" height="9"/><rect x="1698" y="355" width="5" height="9"/><rect x="1840" y="356" width="5" height="9"/></g>
+</g>
+<!-- large steel contact-network pole on left -->
+<g stroke-linejoin="round">
+ <path d="M170 800 204 110 248 110 288 800Z" fill="url(#steel)" stroke="#456175" stroke-width="4"/>
+ <path d="M209 130 239 130 265 800 224 800Z" fill="#7b91a0" opacity=".17"/>
+ <path d="M122 180H420L446 198H108Z" fill="url(#steel)" stroke="#3b5568" stroke-width="5"/>
+ <path d="M150 177 145 126 173 126 184 178" fill="#162b3c" stroke="#526c7e" stroke-width="4"/>
+ <path d="M225 130V76M225 76H360M360 76V105" fill="none" stroke="#6c8596" stroke-width="8"/>
+ <path d="M225 130V76M225 76H360M360 76V105" fill="none" stroke="#c4d3db" stroke-opacity=".38" stroke-width="2"/>
+ <path d="M198 210H480M210 235H525" stroke="#0c1d2b" stroke-width="16"/>
+ <path d="M198 207H480M210 232H525" stroke="#526c7a" stroke-width="3"/>
+ <path d="M205 180 610 250 1125 390" fill="none" stroke="#a0b6c5" stroke-width="5" opacity=".8"/>
+ <path d="M240 154 630 185 1110 310" fill="none" stroke="#071522" stroke-width="12"/>
+ <path d="M240 154 630 185 1110 310" fill="none" stroke="#8ba2b2" stroke-width="2" opacity=".75"/>
+ <path d="M280 170 570 345 880 450" fill="none" stroke="#152e41" stroke-width="7"/>
+ <path d="M280 170 570 345 880 450" fill="none" stroke="#668093" stroke-width="2"/>
+</g>
+<!-- catenary wires and suspension -->
+<g fill="none" stroke-linecap="round">
+ <path d="M290 160Q720 185 1130 340T1680 420" stroke="#9bb2c2" stroke-width="3" opacity=".86"/>
+ <path d="M300 202Q720 240 1120 385T1600 475" stroke="#071522" stroke-width="9"/>
+ <path d="M300 202Q720 240 1120 385T1600 475" stroke="#5c788d" stroke-width="2"/>
+ <path d="M485 183V229M630 204V260M790 244V296M950 293V346M1110 347V394" stroke="#9ab2c0" stroke-width="3"/>
+ <path d="M485 183l-14 12m159 9-14 12m174 28-14 12m174 37-14 12m160 42-14 12" stroke="#c2d1da" stroke-width="3"/>
+</g>
+<!-- warm street lighting -->
+<ellipse cx="645" cy="415" rx="120" ry="82" fill="url(#glow)" opacity=".7"/>
+<path d="M270 520 270 470Q270 405 330 405H490" fill="none" stroke="#192e3c" stroke-width="15"/>
+<path d="M270 520 270 470Q270 405 330 405H490" fill="none" stroke="#8a9ca6" stroke-width="3"/>
+<path d="M490 405l35 4-9 18-35-4Z" fill="#f4c66f"/>
+<path d="M500 413l22 3" stroke="#fff3c5" stroke-width="5"/>
+<!-- landmark illuminated skyscraper on far right -->
+<path d="M1608 800 1692 265 1730 155 1768 265 1830 800Z" fill="url(#tower)" stroke="#8db7cc" stroke-width="5"/>
+<path d="M1608 800 1692 265 1730 155 1768 265 1830 800" fill="none" stroke="#d2e6ef" stroke-width="3" opacity=".75"/>
+<path d="M1644 615H1800M1657 535H1790M1670 455H1780M1684 375H1767M1697 300H1755" stroke="#f2bd63" stroke-width="7"/>
+<path d="M1650 610H1796M1663 530H1785M1676 450H1775M1690 370H1760M1702 295H1748" stroke="#fff0c7" stroke-width="2"/>
+<path d="M1692 265 1730 155 1768 265" fill="none" stroke="#dcecf3" stroke-width="4"/>
+<path d="M1729 155V800" stroke="#4ba4ca" stroke-width="5" opacity=".65"/>
+<!-- foreground vignette -->
+<rect width="1920" height="800" fill="url(#ground)"/>
+<rect width="1920" height="800" fill="#03101c" opacity=".1"/>
+</svg>
