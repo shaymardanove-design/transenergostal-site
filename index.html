@@ -563,26 +563,28 @@ html{scroll-behavior:smooth;scroll-padding-top:82px}body{font-family:Arial,Helve
 }
 
 
-/* Hero background: show the complete wide composition without cover-cropping */
+/* HERO PHOTO — use the uploaded photographic panorama, preserve its natural proportions */
+.hero:before{
+  background-color:#061827!important;
+  background-image:
+    linear-gradient(90deg,rgba(2,14,25,.80) 0%,rgba(3,18,30,.57) 32%,rgba(3,18,30,.20) 58%,rgba(3,18,30,.04) 100%),
+    url('hero-city.jpg') !important;
+  background-repeat:no-repeat!important;
+  background-position:center center!important;
+  background-size:cover!important;
+  filter:saturate(1.08) contrast(1.06);
+}
 @media (min-width:1101px){
-  section.hero{height:670px!important;min-height:670px!important}
-  section.hero:before{background-size:100% 100%!important;background-position:center center!important}
+  section.hero{height:520px!important;min-height:520px!important}
+  .hero:before{background-position:center 53%!important}
 }
 @media (min-width:701px) and (max-width:1100px){
-  section.hero{height:560px!important;min-height:560px!important}
-  section.hero:before{background-size:100% 100%!important;background-position:center center!important}
+  section.hero{height:500px!important;min-height:500px!important}
+  .hero:before{background-position:center center!important}
 }
 @media (max-width:700px){
-  section.hero{min-height:650px!important}
-  section.hero:before{background-size:auto 100%!important;background-position:58% center!important}
-}
-
-/* Final hero photo override: use the uploaded JPG instead of legacy SVG overrides */
-.hero:before{
-  background:
-    linear-gradient(90deg,rgba(2,14,25,.78) 0%,rgba(3,18,30,.52) 34%,rgba(3,18,30,.12) 72%,rgba(3,18,30,.04) 100%),
-    url('/hero-city.jpg') center center/100% 100% no-repeat !important;
-  filter:saturate(1.08) contrast(1.06);
+  section.hero{height:auto!important;min-height:0!important}
+  .hero:before{background-position:58% center!important;background-size:auto 100%!important}
 }
 </style>
 <link rel="stylesheet" href="hero-reference.css?v=5">
